@@ -19,7 +19,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background: linear-gradient(90deg, #232837 60%, #181c24 100%); border-bottom: 2px solid #6ea8fe33; font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="index.php" style="font-size: 1.35rem; letter-spacing: 1px; font-weight: 700;">
-      <img src="./logo/logo-png.png" alt="MLBB" width="36" height="36" class="rounded-circle border border-2 border-primary shadow-sm" style="background: #232837;">
+      <img src="./logo/logo-png.png" alt="MLBB" width="56" height="56" class="rounded-circle border border-2 border-primary shadow-sm" style="background: #232837;">
       <span style="color: #6ea8fe;">MLBB Studies</span>
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mlbbNavbar" aria-controls="mlbbNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,33 +28,28 @@
     <div class="collapse navbar-collapse" id="mlbbNavbar">
       <ul class="navbar-nav ms-auto gap-lg-2">
         <li class="nav-item">
-          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='index.php') echo ' active'; ?>" href="index.php" style="font-size: 1.08rem; font-weight: 500;">
-            <i class="bi bi-house-door-fill me-1"></i>Home
-          </a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-details.php') echo ' active'; ?>" href="hero-details.php" style="font-size: 1.08rem; font-weight: 500;">
-            <i class="bi bi-person-badge-fill me-1"></i>Hero Details
+            Hero Details
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-statistics.php') echo ' active'; ?>" href="hero-statistics.php" style="font-size: 1.08rem; font-weight: 500;">
-            <i class="bi bi-graph-up-arrow me-1"></i>Hero Statistics
+            Hero Statistics
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-position.php') echo ' active'; ?>" href="hero-position.php" style="font-size: 1.08rem; font-weight: 500;">
-            <i class="bi bi-diagram-3-fill me-1"></i>Hero Positions
+            Hero Positions
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-rank.php') echo ' active'; ?>" href="hero-rank.php" style="font-size: 1.08rem; font-weight: 500;">
-            <i class="bi bi-trophy-fill me-1"></i>Hero Ranks
+            Hero Ranks
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='dashboard.php') echo ' active'; ?>" href="dashboard.php" style="font-size: 1.08rem; font-weight: 500;">
-            <i class="bi bi-speedometer2 me-1"></i>Dashboard
+            Dashboard
           </a>
         </li>
       </ul>

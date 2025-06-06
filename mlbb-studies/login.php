@@ -81,8 +81,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       background: linear-gradient(90deg, #468be6 60%, #6ea8fe 100%);
     }
     .logo {
-      width: 54px;
-      height: 54px;
+      width: 154px;
+      height: 154px;
       border-radius: 12px;
       margin-bottom: 12px;
       box-shadow: 0 2px 12px #6ea8fe33;
@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <div class="login-card">
     <div class="text-center">
-      <img src="./logo/logo-png.png" class="logo" alt="Logo">
+      <img src="./logo/logo-v2.png" class="logo" alt="Logo">
       <h2 class="form-title">Sign In</h2>
     </div>
     <?php if ($error): ?>
