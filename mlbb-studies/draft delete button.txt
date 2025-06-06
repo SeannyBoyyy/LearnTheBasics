@@ -1,0 +1,74 @@
+SeannyBoyyy
+ill not use that because when i delete 1 game that is connected to the enemy team game their game will be lost too
+
+GitHub Copilot
+Understood! If deleting a match from one team also removes it from the enemy team’s history (because it’s a shared record), you may want to:
+
+Warn the user clearly that deleting a match will remove it for both teams.
+Or, disable match deletion if you want to preserve both teams’ records.
+Or, implement a “soft delete” (e.g., add a deleted flag) so the match can be hidden for one team but not actually removed from the database.
+
+
+// Handle match deletion
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_match_id'])) {
+    $delete_match_id = intval($_POST['delete_match_id']);
+    // Only allow deleting matches where this team is involved and user owns the team
+    $stmt = $mysqli->prepare("SELECT id FROM drafts WHERE id=? AND (your_team_id=? OR enemy_team_id=?)");
+    $stmt->bind_param('iii', $delete_match_id, $team_id, $team_id);
+    $stmt->execute();
+    $stmt->store_result();
+    if ($stmt->num_rows > 0) {
+        $stmt->close();
+        $stmt = $mysqli->prepare("DELETE FROM drafts WHERE id=?");
+        $stmt->bind_param('i', $delete_match_id);
+        if ($stmt->execute()) {
+            $alert = "Match deleted successfully!";
+        } else {
+            $alert = "Failed to delete match.";
+        }
+        $stmt->close();
+        // Remove match notes as well (optional)
+        $stmt = $mysqli->prepare("DELETE FROM match_notes WHERE match_id=?");
+        $stmt->bind_param('i', $delete_match_id);
+        $stmt->execute();
+        $stmt->close();
+        // Refresh matches after deletion
+        header("Location: view-team.php?id=$team_id");
+        exit;
+    } else {
+        $alert = "Match not found or you do not have permission to delete it.";
+    }
+    $stmt->close();
+}
+
+<!-- Delete Match Button with Bootstrap Modal -->
+<button type="button" class="btn btn-outline-danger btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#deleteMatchModal<?= $match['id'] ?>">
+    <i class="bi bi-trash"></i> Delete
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteMatchModal<?= $match['id'] ?>" tabindex="-1" aria-labelledby="deleteMatchModalLabel<?= $match['id'] ?>" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="deleteMatchModalLabel<?= $match['id'] ?>"><i class="bi bi-exclamation-triangle-fill text-danger me-2"></i>Confirm Delete</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to <span class="text-danger fw-bold">delete this match</span>? This action cannot be undone.</p>
+        <ul>
+          <li><strong>Date:</strong> <?= date('F j, Y \a\t g:i A', strtotime($match['created_at'])) ?></li>
+          <li><strong>Your Team:</strong> <?= htmlspecialchars($match['your_team_name']) ?></li>
+          <li><strong>Enemy Team:</strong> <?= htmlspecialchars($match['enemy_team_name']) ?></li>
+        </ul>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <form method="post" class="d-inline">
+            <input type="hidden" name="delete_match_id" value="<?= $match['id'] ?>">
+            <button type="submit" class="btn btn-danger">Delete Match</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

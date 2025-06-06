@@ -1,0 +1,64 @@
+<!-- Add these in your <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+/* Professional font and hover effect */
+.navbar, .navbar * {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif !important;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+  color: #6ea8fe !important;
+  background: rgba(110,168,254,0.07);
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+</style>
+
+<!-- Place this right after <body> -->
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background: linear-gradient(90deg, #232837 60%, #181c24 100%); border-bottom: 2px solid #6ea8fe33; font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.php" style="font-size: 1.35rem; letter-spacing: 1px; font-weight: 700;">
+      <img src="./logo/logo-png.png" alt="MLBB" width="36" height="36" class="rounded-circle border border-2 border-primary shadow-sm" style="background: #232837;">
+      <span style="color: #6ea8fe;">MLBB Studies</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mlbbNavbar" aria-controls="mlbbNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mlbbNavbar">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='index.php') echo ' active'; ?>" href="index.php" style="font-size: 1.08rem; font-weight: 500;">
+            <i class="bi bi-house-door-fill me-1"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-details.php') echo ' active'; ?>" href="hero-details.php" style="font-size: 1.08rem; font-weight: 500;">
+            <i class="bi bi-person-badge-fill me-1"></i>Hero Details
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-statistics.php') echo ' active'; ?>" href="hero-statistics.php" style="font-size: 1.08rem; font-weight: 500;">
+            <i class="bi bi-graph-up-arrow me-1"></i>Hero Statistics
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-position.php') echo ' active'; ?>" href="hero-position.php" style="font-size: 1.08rem; font-weight: 500;">
+            <i class="bi bi-diagram-3-fill me-1"></i>Hero Positions
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-rank.php') echo ' active'; ?>" href="hero-rank.php" style="font-size: 1.08rem; font-weight: 500;">
+            <i class="bi bi-trophy-fill me-1"></i>Hero Ranks
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='dashboard.php') echo ' active'; ?>" href="dashboard.php" style="font-size: 1.08rem; font-weight: 500;">
+            <i class="bi bi-speedometer2 me-1"></i>Dashboard
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->

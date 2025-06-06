@@ -1,0 +1,32 @@
+                  <div class="mb-2">
+                    <span class="fw-semibold text-info"> Battle Skill:</span>
+                    <?php if (!empty($plan['battleskill']['__data']['skillicon'])): ?>
+                      <img src="<?= htmlspecialchars($plan['battleskill']['__data']['skillicon']) ?>" alt="Battle Skill" style="height:32px;width:32px;vertical-align:middle;margin-left:6px;">
+                    <?php endif; ?>
+                  </div>
+                  <div class="mb-2">
+                    <span class="fw-semibold text-warning"><i class="bi bi-gem"></i> Emblem:</span>
+                    <?php if (!empty($plan['emblemplan']['emblemplan']['attriicon'])): ?>
+                      <img src="<?= htmlspecialchars($plan['emblemplan']['emblemplan']['attriicon']) ?>" alt="Emblem" style="height:32px;width:32px;vertical-align:middle;margin-left:6px;">
+                    <?php endif; ?>
+                  </div>
+                  <div class="mb-2">
+                    <span class="fw-semibold text-success"><i class="bi bi-stars"></i> Talents:</span>
+                    <?php
+                      foreach (['giftid1', 'giftid2', 'giftid3'] as $giftKey) {
+                        if (!empty($plan['emblemplan'][$giftKey]['emblemskill']['skillicon'])) {
+                          echo '<img src="' . htmlspecialchars($plan['emblemplan'][$giftKey]['emblemskill']['skillicon']) . '" alt="Talent" style="height:32px;width:32px;vertical-align:middle;margin:0 3px 0 3px;">';
+                        }
+                      }
+                    ?>
+                  </div>
+                  <div class="mb-2">
+                    <span class="fw-semibold text-primary"><i class="bi bi-backpack2"></i> Equipment:</span>
+                    <?php if (!empty($plan['equiplist'])): ?>
+                      <?php foreach ($plan['equiplist'] as $equip): ?>
+                        <?php if (!empty($equip['equipicon'])): ?>
+                          <img src="<?= htmlspecialchars($equip['equipicon']) ?>" alt="<?= htmlspecialchars($equip['equipname']) ?>" title="<?= htmlspecialchars($equip['equipname']) ?>" style="height:32px;width:32px;vertical-align:middle;margin:0 3px 0 3px;">
+                        <?php endif; ?>
+                      <?php endforeach; ?>
+                    <?php endif; ?>
+                  </div>
