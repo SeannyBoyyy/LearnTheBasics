@@ -413,6 +413,153 @@ $matches_to_show = array_slice($matches, $start_index, $matches_per_page);
                     </div>
                 </div>
             </div>
+            <div class="row g-3 mt-4">
+                <!-- New: Heroes that beat this team most often -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-dark rounded-3 p-3 text-center shadow-sm">
+                        <div class="fw-bold text-danger mb-2">Heroes That Beat Us Most</div>
+                        <?php
+                        // Calculate heroes that beat this team most often
+                        $heroes_beat_us = [];
+                        foreach ($matches as $match) {
+                            $is_loss = !(
+                                ($match['winner'] == 'your_team' && $match['your_team_id'] == $team_id) ||
+                                ($match['winner'] == 'enemy_team' && $match['enemy_team_id'] == $team_id
+                            ));
+                            
+                            if ($is_loss) {
+                                $enemy_picks = ($match['your_team_id'] == $team_id) ? 
+                                    json_decode($match['enemy_picks'], true) : 
+                                    json_decode($match['your_picks'], true);
+                                
+                                if (is_array($enemy_picks)) {
+                                    foreach ($enemy_picks as $hero) {
+                                        $hero_key = strtolower($hero);
+                                        if (!isset($heroes_beat_us[$hero_key])) {
+                                            $heroes_beat_us[$hero_key] = ['name' => $hero, 'count' => 0];
+                                        }
+                                        $heroes_beat_us[$hero_key]['count']++;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // Sort by most losses
+                        usort($heroes_beat_us, function($a, $b) {
+                            return $b['count'] <=> $a['count'];
+                        });
+                        $top_heroes_beat_us = array_slice($heroes_beat_us, 0, 5);
+                        ?>
+                        
+                        <?php if ($top_heroes_beat_us): ?>
+                            <?php foreach ($top_heroes_beat_us as $hero): ?>
+                                <div class="mb-2 text-white">
+                                    <?= hero_img_tag($hero['name'], $hero_images) ?>
+                                    <span class="fw-semibold"><?= htmlspecialchars($hero['name']) ?></span>
+                                    <span class="small text-secondary">(<?= $hero['count'] ?> loss<?= $hero['count'] > 1 ? 'es' : '' ?>)</span>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <div class="text-secondary">No data</div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                
+                <!-- New: Enemy Bans Against Us (All Matches) -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-dark rounded-3 p-3 text-center shadow-sm">
+                        <div class="fw-bold text-warning mb-2">Enemy Bans Against Us</div>
+                        <?php
+                        // Calculate enemy bans against this team
+                        $enemy_bans_against_us = [];
+                        foreach ($matches as $match) {
+                            $enemy_bans = ($match['your_team_id'] == $team_id) ? 
+                                json_decode($match['enemy_bans'], true) : 
+                                json_decode($match['your_bans'], true);
+                            
+                            if (is_array($enemy_bans)) {
+                                foreach ($enemy_bans as $ban) {
+                                    $ban_key = strtolower($ban);
+                                    if (!isset($enemy_bans_against_us[$ban_key])) {
+                                        $enemy_bans_against_us[$ban_key] = ['name' => $ban, 'count' => 0];
+                                    }
+                                    $enemy_bans_against_us[$ban_key]['count']++;
+                                }
+                            }
+                        }
+                        
+                        // Sort by most banned against us
+                        usort($enemy_bans_against_us, function($a, $b) {
+                            return $b['count'] <=> $a['count'];
+                        });
+                        $top_enemy_bans = array_slice($enemy_bans_against_us, 0, 5);
+                        ?>
+                        
+                        <?php if ($top_enemy_bans): ?>
+                            <?php foreach ($top_enemy_bans as $ban): ?>
+                                <div class="mb-2 text-white">
+                                    <?= hero_img_tag($ban['name'], $hero_images) ?>
+                                    <span class="fw-semibold"><?= htmlspecialchars($ban['name']) ?></span>
+                                    <span class="small text-secondary">(<?= $ban['count'] ?> ban<?= $ban['count'] > 1 ? 's' : '' ?>)</span>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <div class="text-secondary">No data</div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                
+                <!-- New: Enemy Bans When We Lost -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="bg-dark rounded-3 p-3 text-center shadow-sm">
+                        <div class="fw-bold text-danger mb-2">Enemy Bans When We Lost</div>
+                        <?php
+                        // Calculate enemy bans in matches we lost
+                        $enemy_bans_when_we_lost = [];
+                        foreach ($matches as $match) {
+                            $is_loss = !(
+                                ($match['winner'] == 'your_team' && $match['your_team_id'] == $team_id) ||
+                                ($match['winner'] == 'enemy_team' && $match['enemy_team_id'] == $team_id
+                            ));
+                            
+                            if ($is_loss) {
+                                $enemy_bans = ($match['your_team_id'] == $team_id) ? 
+                                    json_decode($match['enemy_bans'], true) : 
+                                    json_decode($match['your_bans'], true);
+                                
+                                if (is_array($enemy_bans)) {
+                                    foreach ($enemy_bans as $ban) {
+                                        $ban_key = strtolower($ban);
+                                        if (!isset($enemy_bans_when_we_lost[$ban_key])) {
+                                            $enemy_bans_when_we_lost[$ban_key] = ['name' => $ban, 'count' => 0];
+                                        }
+                                        $enemy_bans_when_we_lost[$ban_key]['count']++;
+                                    }
+                                }
+                            }
+                        }
+                        
+                        // Sort by most banned when we lost
+                        usort($enemy_bans_when_we_lost, function($a, $b) {
+                            return $b['count'] <=> $a['count'];
+                        });
+                        $top_enemy_bans_loss = array_slice($enemy_bans_when_we_lost, 0, 5);
+                        ?>
+                        
+                        <?php if ($top_enemy_bans_loss): ?>
+                            <?php foreach ($top_enemy_bans_loss as $ban): ?>
+                                <div class="mb-2 text-white">
+                                    <?= hero_img_tag($ban['name'], $hero_images) ?>
+                                    <span class="fw-semibold"><?= htmlspecialchars($ban['name']) ?></span>
+                                    <span class="small text-secondary">(<?= $ban['count'] ?> loss<?= $ban['count'] > 1 ? 'es' : '' ?>)</span>
+                                </div>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <div class="text-secondary">No data</div>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
             <!-- ...you can keep the rest of your analysis section here... -->
         </div>
         <!-- End Analyze This Team Section -->
