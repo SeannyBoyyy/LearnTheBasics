@@ -1,0 +1,2981 @@
+[
+    {
+        "heroid": 1,
+        "name": "Miya",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f6d3f7f102e1f0fb9dc92b971d1128ec.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da894b37bfb5cadb32307f371f31918a.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_7c5b221cf1f95a1f06da1b7b644adfec.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_32c0d9d3a727a9052754296af6251435.png",
+        "abilityshow": [
+            "10",
+            "70",
+            "40",
+            "10"
+        ],
+        "story": "The Priestess of the Moon and protector of the Moonlit Forest.",
+        "title": ""
+    },
+    {
+        "heroid": 2,
+        "name": "Balmond",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80be8a6ffd65666746a218bdae1648a0.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4df4ce8528166d6e1cc94480f4f0e910.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Damage",
+            "Regen"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_78258580fdcd4461a47331ddf0526bdd.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_774d5cdd7ab9bed0afc7e11dc9d1c97d.png",
+        "abilityshow": [
+            "80",
+            "30",
+            "20",
+            "10"
+        ],
+        "story": "The leader of the Orc Legion.",
+        "title": ""
+    },
+    {
+        "heroid": 3,
+        "name": "Saber",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e3171fbce7f67586df05233bfa1635c5.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6bbfac806f29d29f17fea9e98d2d2fee.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Charge",
+            "Finisher"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_a34d4efbc83556361b484f5d3d6cd463.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_75f50285862c6c34aa1770b11d00b4f8.png",
+        "abilityshow": [
+            "20",
+            "60",
+            "60",
+            "10"
+        ],
+        "story": "A swordsman in pursuit of invincibility, used by Laboratory 1718.",
+        "title": ""
+    },
+    {
+        "heroid": 4,
+        "name": "Alice",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_34013ffb449baa842122de6126e43259.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_558cf35ad7d5f0cc4f0b4cbdf9498f9f.png",
+        "sortlabel": [
+            "Mage",
+            "Tank"
+        ],
+        "speciality": [
+            "Charge",
+            "Regen"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_7135bd847a78dca0147e79c38666ba5b.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e7f782918c687ed9c06e76f297814d58.png",
+        "abilityshow": [
+            "50",
+            "50",
+            "70",
+            "70"
+        ],
+        "story": "Cunning and sinister Blood Demon Queen.",
+        "title": ""
+    },
+    {
+        "heroid": 5,
+        "name": "Nana",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff9412a3d36170f98801085bb32f7bad.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ee1e0d80d87bb614a0c552ef028f85ce.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Poke",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_4d1034219db5d3da420b941b4bb94ecc.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3ef9fa051f8643b1345accd72c48abf.png",
+        "abilityshow": [
+            "50",
+            "60",
+            "100",
+            "10"
+        ],
+        "story": "Little Leonin with no worries.",
+        "title": ""
+    },
+    {
+        "heroid": 6,
+        "name": "Tigreal",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2f346943d85318a466b5eba513682d7c.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8b30576754be1a4f8bebd09df8d6bec7.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Crowd Control",
+            ""
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_a9d93ed3dd0d1385f25372eda0aa10e7.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4e0005dbfb1376beaccc54ef7aa39375.png",
+        "abilityshow": [
+            "80",
+            "10",
+            "100",
+            "10"
+        ],
+        "story": "Leader of the Light's Order, guardian of the Moniyan Empire.",
+        "title": ""
+    },
+    {
+        "heroid": 7,
+        "name": "Alucard",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3c0135f79624621b63ff686f540b2a78.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0f51b6906e08897aa02330d65b0deeac.png",
+        "sortlabel": [
+            "Fighter",
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_723ce331bc58554e6f92079c9a54aea5.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2a0606e575ae278db77134b50ccef7ac.png",
+        "abilityshow": [
+            "50",
+            "50",
+            "10",
+            "40"
+        ],
+        "story": "Demon hunter who detests the darkness.",
+        "title": ""
+    },
+    {
+        "heroid": 8,
+        "name": "Karina",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_44a9d295baa79bf949fe562ba1b15f2e.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f49394186dc0e55d545da8377be83280.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Finisher",
+            "Magic Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_e0e319c392191e1c089270ce257b9af8.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7745192fc72de28d09e839cd7c250bae.png",
+        "abilityshow": [
+            "50",
+            "70",
+            "10",
+            "40"
+        ],
+        "story": "Killer from the Dark Elf tribe who is fighting to rescue her sister Selena.",
+        "title": ""
+    },
+    {
+        "heroid": 9,
+        "name": "Akai",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7ed2c59361619204e6e2134e2452bd8e.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28f223447f0174336ff0922d364d81d3.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Guard",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_97d987784b17e25683dd6c914eb7be7f.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_48404e80a426805d1b6072b3b33e2c3a.png",
+        "abilityshow": [
+            "90",
+            "30",
+            "90",
+            "30"
+        ],
+        "story": "The almighty panda hero of Stream Valley.",
+        "title": ""
+    },
+    {
+        "heroid": 10,
+        "name": "Franco",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e6e87e9b82ab7863cbcb678e544200e4.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2928027062e3c2a97bc3fd4a84897012.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Initiator",
+            "Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_d02349fec3a4ebd4986743d32c95ca17.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d9a0d6432cc0610a2232b2d2ed5e09ce.png",
+        "abilityshow": [
+            "80",
+            "10",
+            "100",
+            "20"
+        ],
+        "story": "Brave permafrost warrior, Bane's sworn enemy.",
+        "title": ""
+    },
+    {
+        "heroid": 11,
+        "name": "Bane",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_384c3e16350f91e191de2351d73a9980.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e4e74bb161da0f477cc0d1819fa39e6.png",
+        "sortlabel": [
+            "Fighter",
+            "Mage"
+        ],
+        "speciality": [
+            "Push",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_95b0637731ea94edbc6c4da5ed20d75c.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_846a816f7905f17c81cb35e7f3ff1c3e.png",
+        "abilityshow": [
+            "50",
+            "60",
+            "40",
+            "30"
+        ],
+        "story": "Cruel pirate leader, Franco's sworn enemy.",
+        "title": ""
+    },
+    {
+        "heroid": 12,
+        "name": "Bruno",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_890739c136c183bc1a128867baf2a357.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff39deb9c6afec3d977fdbe9d86f78cb.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_a58a8659284c9b852c5fa025638ab888.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68d7ca30f69cb691125e3f03cd782a53.png",
+        "abilityshow": [
+            "20",
+            "60",
+            "20",
+            "50"
+        ],
+        "story": "The captain of the Eruditio Rangers that protects the city with his amazing football skills.",
+        "title": ""
+    },
+    {
+        "heroid": 13,
+        "name": "Clint",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3f5ffe36b6e07ded46dac0ce665d971b.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a8345c69a4c9c611fdfce91089fe74a.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_f7716a349ae9c5119841031df22210ed.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ffb96ce8d57c9987401f9c5bfebee3b2.png",
+        "abilityshow": [
+            "30",
+            "70",
+            "40",
+            "70"
+        ],
+        "story": "A sharpshooter full of righteousness and justice.",
+        "title": ""
+    },
+    {
+        "heroid": 14,
+        "name": "Rafaela",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c4d4ab4a6353c0dd1481a59d57d09cdf.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68277dce415742c4a98883151c693a07.png",
+        "sortlabel": [
+            "Support"
+        ],
+        "speciality": [
+            "Regen",
+            "Guard"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_f5298620e2902c1c15fb11d5962486f2.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f22e22659e8b1acfb665aec8eaffabd7.png",
+        "abilityshow": [
+            "60",
+            "20",
+            "70",
+            "20"
+        ],
+        "story": "An angel loved and respected by the people of this world.",
+        "title": ""
+    },
+    {
+        "heroid": 15,
+        "name": "Eudora",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_86c82f8ea9c76bfb38f5fa83320928e6.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_60956060c4cbb86f3c6343da05b70568.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Control",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_00844bbb210fe0884826629fb2ad5f27.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3e9c8286caaff10bd0f0844545198163.png",
+        "abilityshow": [
+            "10",
+            "80",
+            "80",
+            "10"
+        ],
+        "story": "Dean of the Ulturia School of the Magic Academy, Light Elf.",
+        "title": ""
+    },
+    {
+        "heroid": 16,
+        "name": "Zilong",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d218e81f1b2383e3def3d6a14796d74e.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9db57da4f0daef6d432676e4f19101ed.png",
+        "sortlabel": [
+            "Fighter",
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_754c164566eda94a8086593d9af23f46.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e22227fa343e8c5bffd83bb78d1bd292.png",
+        "abilityshow": [
+            "20",
+            "50",
+            "60",
+            "10"
+        ],
+        "story": "Guardian of the Dragon Altar and the Oriental Fighter who inherited the Cloud Dragon's power.",
+        "title": ""
+    },
+    {
+        "heroid": 17,
+        "name": "Fanny",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_eec0194a974ed18ceb71bf5d86457d4e.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3391df36d6dcc54dd1c417098e15ec59.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Finisher"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_d8f0442a59e3a585218223e57372ea8a.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8ea3a95fa3c726ed0338c0fdd21ad991.png",
+        "abilityshow": [
+            "60",
+            "70",
+            "10",
+            "100"
+        ],
+        "story": "A blade dancer in the battlefield.",
+        "title": ""
+    },
+    {
+        "heroid": 18,
+        "name": "Layla",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a532838b7358fed58458c612da3d59b.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b2b38e9406ea0de0b866db7674feea0f.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_995227993612d04468f763d6c66dcd1a.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6efe9abc2047f59d45fa1c88fb1261b7.png",
+        "abilityshow": [
+            "10",
+            "80",
+            "10",
+            "10"
+        ],
+        "story": "The backbone of the Eruditio Rangers who is also known as the Shining Star.",
+        "title": ""
+    },
+    {
+        "heroid": 19,
+        "name": "Minotaur",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1d1c6132b7cb0a2031972d45029967db.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3ecd2c0843df7ec85044dafff6bf4553.png",
+        "sortlabel": [
+            "Tank",
+            "Support"
+        ],
+        "speciality": [
+            "Crowd Control",
+            ""
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_7368c6c9a42821e902a96d9071d8a0e4.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_cf2794cfdbea9a75784133863cf6ac83.png",
+        "abilityshow": [
+            "100",
+            "10",
+            "80",
+            "40"
+        ],
+        "story": "Minoan prince determined to restore his homeland.",
+        "title": ""
+    },
+    {
+        "heroid": 20,
+        "name": "Lolita",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c58952634f940136c125ba17aad8376e.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_474cea36a4bfdc7bf7d94530853a99b2.png",
+        "sortlabel": [
+            "Support",
+            "Tank"
+        ],
+        "speciality": [
+            "Guard",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_c5c2d90810a4130242ae2aa5b5eb6257.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_55de18c865efe8e360b3b9ae463d76a2.png",
+        "abilityshow": [
+            "100",
+            "10",
+            "90",
+            "40"
+        ],
+        "story": "Member of the Eruditio Rangers and protector of the Leviathan workshop.",
+        "title": ""
+    },
+    {
+        "heroid": 21,
+        "name": "Hayabusa",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_261209d8154dbe2bf6d4292076b0437f.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9cc074562291a02644a0ddae28eeaa42.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_41f3b77867e66780da9b5890dfb9964a.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_63cb1f44bf906b71767a000e38d8ab14.png",
+        "abilityshow": [
+            "40",
+            "50",
+            "10",
+            "50"
+        ],
+        "story": "Leader of the Shadow Sect, in the Scarlet Shadow of the Cadia Riverlands.",
+        "title": ""
+    },
+    {
+        "heroid": 22,
+        "name": "Freya",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_703d1d626507f05ff72c799f53b123b9.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ecfab713c877196d4b9e44a2aa2f6a.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Chase",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_0059b3d4c9f5db098fa053074d27e7ec.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_efdd9d11fe41854a4ee1e62139200a0b.png",
+        "abilityshow": [
+            "60",
+            "50",
+            "50",
+            "50"
+        ],
+        "story": "The Valkyrie who guards the Northern Vale.",
+        "title": ""
+    },
+    {
+        "heroid": 23,
+        "name": "Gord",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_818d00fbb946feca543a95ff7b035ec5.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_9513f5e10ec33f76747732eaf2082259.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Poke",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_014baf6366c6c635dca89c4b5878f1e0.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_6ba16b4ca438152a629e7706cbd7453d.png",
+        "abilityshow": [
+            "10",
+            "70",
+            "80",
+            "20"
+        ],
+        "story": "Dean of the Icarus School of the Magic Academy.",
+        "title": ""
+    },
+    {
+        "heroid": 24,
+        "name": "Natalia",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8ca11ea3470a120eb3b011225e40bf08.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fbb5065b6ff174d1a20ccf5b7f523514.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Finisher"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_2ad70b1e8501f7f7ef08e4e8951e19ec.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_67fa418c9efe0a0c29112067b9ddfcd5.png",
+        "abilityshow": [
+            "10",
+            "60",
+            "60",
+            "90"
+        ],
+        "story": "An assassin exiled by the Empire.",
+        "title": ""
+    },
+    {
+        "heroid": 25,
+        "name": "Kagura",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_81334e359e0b00a4797ce3c80a49ca73.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da424b020b8ac8235d64a1b8a09aa749.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Poke",
+            "Finisher"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_1c0c51d1f28332cb1705ef28c49c90a9.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_634196d9234babcc3072155d4fefaf0c.png",
+        "abilityshow": [
+            "30",
+            "90",
+            "40",
+            "80"
+        ],
+        "story": "A genius Onmyouji Master that inherited the ancestral treasure Seimei Umbrella.",
+        "title": ""
+    },
+    {
+        "heroid": 26,
+        "name": "Chou",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_57d7c6285b0aeb615f8b4e8865e6dc7b.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_158209b180032c4564b8f3bde8c48888.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Chase",
+            "Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_5a72a356046a7345112c52b79b7372e3.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_42/100_850c4b51e3dbab3fd12a718917eaaf44.png",
+        "abilityshow": [
+            "50",
+            "30",
+            "80",
+            "70"
+        ],
+        "story": "A talented fighter with a heart of chivalry.",
+        "title": ""
+    },
+    {
+        "heroid": 27,
+        "name": "Sun",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da4cfb603eab2b975aa8f7630881e3a9.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_117b5cdcc13232157075ce7b7f6177e9.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Push",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_52b71c17a0458bf33a91ac52dff6a71d.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f082e5ba6eb2dd54ae922c0f57c816ac.png",
+        "abilityshow": [
+            "50",
+            "50",
+            "10",
+            "30"
+        ],
+        "story": "The immortal Monkey King, resolute and unyielding like the mountain that bore him.",
+        "title": ""
+    },
+    {
+        "heroid": 28,
+        "name": "Alpha",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e7ace719171987280795da2c885daf03.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_86c9f91f530727db6498f920d19180d1.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Charge",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_cd0dfb56d9e1b111f5f8d6a2c80a7e46.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_49cc1a8137341b547e2126910cf91ee6.png",
+        "abilityshow": [
+            "60",
+            "40",
+            "70",
+            "10"
+        ],
+        "story": "A pure cyborg made by Laboratory 1718.",
+        "title": ""
+    },
+    {
+        "heroid": 29,
+        "name": "Ruby",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_87a6b382c3e5b864cdcd8f7752151a96.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4b96c75b136290576d849309722d4d20.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Crowd Control",
+            "Regen"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_48351f7507f74f98c8d2299b410fe2ff.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5b9d38f9f2e7ca03f9f489de19656bc9.png",
+        "abilityshow": [
+            "90",
+            "20",
+            "90",
+            "40"
+        ],
+        "story": "A girl who grew up with Roger's help.",
+        "title": ""
+    },
+    {
+        "heroid": 30,
+        "name": "Yi Sun-shin",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e7ec78a2d7f84ef57deac87ec2b40dbf.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_961378be3f498d42c25b3defd1635ad1.png",
+        "sortlabel": [
+            "Assassin",
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Chase"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_891fc37964908684f554ca6a552c82e0.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3fe7fdb5f2aedef505f3728c28572e2e.png",
+        "abilityshow": [
+            "40",
+            "90",
+            "20",
+            "70"
+        ],
+        "story": "Leader of the City of the Dragon Fleet.",
+        "title": ""
+    },
+    {
+        "heroid": 31,
+        "name": "Moskov",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_67e50f5bc90601cd0596bd41d0572baa.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a60a866ab6752a7f66766e720da987ea.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Chase"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_4c2ea289662fc611c3e6838033b0048e.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9cf1a5936ac506d5e1b911be097acfb7.png",
+        "abilityshow": [
+            "20",
+            "60",
+            "60",
+            "50"
+        ],
+        "story": "A warrior of the desert that embraced the darkness to seek his revenge.",
+        "title": ""
+    },
+    {
+        "heroid": 32,
+        "name": "Johnson",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2ad944e166e69a31623ccdb1f4b38f91.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85ff988c6660b4d04f8dd3d40df988bb.png",
+        "sortlabel": [
+            "Tank",
+            "Support"
+        ],
+        "speciality": [
+            "Support",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_0d351f0e1d4dbda112b53818afadadb8.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9939e5cc09011a287a989b7d4b3aec4d.png",
+        "abilityshow": [
+            "80",
+            "30",
+            "90",
+            "50"
+        ],
+        "story": "A super cyborg who can transform into a car and lead his teammates into battle.",
+        "title": ""
+    },
+    {
+        "heroid": 33,
+        "name": "Cyclops",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_70d3453531870386192d20dd91aa882c.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_68da456f9c01b2f88d29ee320db181ed.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Damage",
+            "Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_6675619c7a532f918d9f567834690d55.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_71c31e9801e7d1b40604d54099b30054.png",
+        "abilityshow": [
+            "30",
+            "100",
+            "70",
+            "60"
+        ],
+        "story": "A celestial traveler in the universe.",
+        "title": ""
+    },
+    {
+        "heroid": 34,
+        "name": "Estes",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c10f7328de015adbc999254a72c912d8.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff4de3b0aabd1d2f6e184db1c831f6a9.png",
+        "sortlabel": [
+            "Support"
+        ],
+        "speciality": [
+            "Regen",
+            "Guard"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_fc01c4db086cacb598108433aeaa1237.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a3619b68f415405f0a1ad77be31eb64d.png",
+        "abilityshow": [
+            "70",
+            "10",
+            "20",
+            "30"
+        ],
+        "story": "Elf King who rules the Moon Elves.",
+        "title": ""
+    },
+    {
+        "heroid": 35,
+        "name": "Hilda",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e71f7aa2d75cd340da108318b3d5a3f1.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_acd700708dc515f5c63a08f8835a9941.png",
+        "sortlabel": [
+            "Fighter",
+            "Tank"
+        ],
+        "speciality": [
+            "Damage",
+            "Regen"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_566622b6b977fc85490d983169a83788.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0adb85b02fe21534ab505b61977f699f.png",
+        "abilityshow": [
+            "90",
+            "40",
+            "40",
+            "40"
+        ],
+        "story": "Inheritor of the Power of the Megalith.",
+        "title": ""
+    },
+    {
+        "heroid": 36,
+        "name": "Aurora",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0c97d1f7482d3c18074fc27a61c0e802.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f9b2be0150361018bb98f941b9667c42.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Crowd Control",
+            "Poke"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_4760ac03ef7df2f0a3f39c9a4b3a033b.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1f3f900f917956e81d7764b9e5ffeb3d.png",
+        "abilityshow": [
+            "40",
+            "70",
+            "100",
+            "10"
+        ],
+        "story": "The Maiden of the Glacier who grants eternal remembrance in the legends of the North.",
+        "title": ""
+    },
+    {
+        "heroid": 37,
+        "name": "Lapu-Lapu",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_585b7071cf12473e2b27a0121f6192c0.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_28036c4584c914c5aad4d2feeafb2452.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Chase",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_4c693b541abb917905cc6ca4c0bcb845.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b72b473b98494269cedbba84d4888409.png",
+        "abilityshow": [
+            "80",
+            "40",
+            "40",
+            "50"
+        ],
+        "story": "Hero who defends the Vonetis Islands from outsiders",
+        "title": ""
+    },
+    {
+        "heroid": 38,
+        "name": "Vexana",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8a6f5f1c20d001819222bd251bb594d1.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_743edd1702084c4ed247908d698bca77.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Poke",
+            "Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_68354f4ee2a8dfb79801cf122f1046d8.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_39c9058219c59535e9ed07645c8d9dd3.png",
+        "abilityshow": [
+            "20",
+            "90",
+            "50",
+            "10"
+        ],
+        "story": "The young duchess guarding Necrokeep.",
+        "title": ""
+    },
+    {
+        "heroid": 39,
+        "name": "Roger",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_32304eb469dc241a15e3d539584f62a9.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b40e578f13465b3ae99d0a9baac7ecc9.png",
+        "sortlabel": [
+            "Fighter",
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_ef34009d11ca660530b70a55cb3af71b.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d518759b615468fc3bc4f6a3ad2c598f.png",
+        "abilityshow": [
+            "60",
+            "40",
+            "10",
+            "50"
+        ],
+        "story": "A werewolf wandering in the dark forest longing for revenge.",
+        "title": ""
+    },
+    {
+        "heroid": 40,
+        "name": "Karrie",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_141cd91af493fe420541835221d24c18.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_294576f2bd0dcbcc9041031969d0eb09.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_f1814a99af8c860a5755b4b0ad911f80.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ccc0a2768caba67b601309c771e7ecd5.png",
+        "abilityshow": [
+            "30",
+            "80",
+            "10",
+            "40"
+        ],
+        "story": "Indifferent and powerful Yasson.",
+        "title": ""
+    },
+    {
+        "heroid": 41,
+        "name": "Gatotkaca",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b7a1b7f856deca1644516417db30acb6.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_96f9dbbc096e0f0a28f9b9e587d06a9c.png",
+        "sortlabel": [
+            "Tank",
+            "Fighter"
+        ],
+        "speciality": [
+            "Crowd Control",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_6554b94d8ee14d8eb24ad655c6ea9896.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e3ccd096c9c4649519d736073acca91a.png",
+        "abilityshow": [
+            "90",
+            "30",
+            "90",
+            "10"
+        ],
+        "story": "Warrior from the Arcadhem universe.",
+        "title": ""
+    },
+    {
+        "heroid": 42,
+        "name": "Harley",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3197492c35e6a2918d9196e4989cfda9.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3aa6964c07a70f9b125da447f320e1ac.png",
+        "sortlabel": [
+            "Assassin",
+            "Mage"
+        ],
+        "speciality": [
+            "Burst",
+            "Poke"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_262404fbd4d857939d88ef144f35aa27.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_503566ddaa4727778929dee4b3a01807.png",
+        "abilityshow": [
+            "30",
+            "90",
+            "10",
+            "60"
+        ],
+        "story": "The young mage whose powers awakened once thrust into danger and who now arrives at the Magic Academy to study.",
+        "title": ""
+    },
+    {
+        "heroid": 43,
+        "name": "Irithel",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a1faeef3e2187f0938c2eeff4a7bf962.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a7c51b517dbce49dac4e537bd4ab4f87.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_8bdf0e2f05d6e7849c06ca9386c15349.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5af934fae1b64f1c689a346741a49858.png",
+        "abilityshow": [
+            "10",
+            "80",
+            "10",
+            "50"
+        ],
+        "story": "The forest hunter with a smilodon.",
+        "title": ""
+    },
+    {
+        "heroid": 44,
+        "name": "Grock",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b6bfa6adbe8c282a0b83f3f3a5bd85c7.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_36822d5dd75500966a5e0febc7dff059.png",
+        "sortlabel": [
+            "Tank",
+            "Fighter"
+        ],
+        "speciality": [
+            "Crowd Control",
+            "Initiator"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_b1963659b31149ae0d4640ff2ad6a6cd.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8d904fbad23813b91539e367e8ce5262.png",
+        "abilityshow": [
+            "90",
+            "40",
+            "80",
+            "60"
+        ],
+        "story": "Stone man awakened from sleep.",
+        "title": ""
+    },
+    {
+        "heroid": 45,
+        "name": "Argus",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e6c706529acaf3f6c703405673af945b.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0bd96658e5b8ec578226ea1622bd7231.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Charge",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_6cbdd961024b54a89c8496d1c0920017.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ee4f9ddb2f82ef0dfc99bb72e0a8f557.png",
+        "abilityshow": [
+            "70",
+            "50",
+            "50",
+            "60"
+        ],
+        "story": "The angel who fell from light into darkness.",
+        "title": ""
+    },
+    {
+        "heroid": 46,
+        "name": "Odette",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8ecd04f6d20c82508e69b839ca49131b.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d9251718a8894546ba04cfa9ca68dedc.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Burst",
+            "Poke"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_dfa2e7ae3f270b7641b43f9a9079c41b.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_6fd1d8e4d436d1de3102a7880cd61cbd.png",
+        "abilityshow": [
+            "30",
+            "100",
+            "70",
+            "20"
+        ],
+        "story": "Innocent princess that grew up in the Swan Castle and genius mage that excels in sword and scepter.",
+        "title": ""
+    },
+    {
+        "heroid": 47,
+        "name": "Lancelot",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9d7d32fc7cd9da8b47003178a279c046.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dc4b821e49b904715172136017798da3.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_09e352c183e12e34ea4c9ecce82c69be.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_db7d20dd6e7a9f958ad210680dc2ba7b.png",
+        "abilityshow": [
+            "40",
+            "50",
+            "10",
+            "50"
+        ],
+        "story": "Prodigal son and genius swordsman of House Baroque.",
+        "title": ""
+    },
+    {
+        "heroid": 48,
+        "name": "Diggie",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_45ea26bab973b16071fe6e3d52e18a66.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bdf46136cb8a7903dae6d58e8349cb.png",
+        "sortlabel": [
+            "Support"
+        ],
+        "speciality": [
+            "Guard",
+            "Poke"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_ceff756a410df7945a46a50a359bc428.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7a7a688cf1562a124f7183b2c2957608.png",
+        "abilityshow": [
+            "40",
+            "40",
+            "20",
+            "50"
+        ],
+        "story": "The owl scholar who can control time.",
+        "title": ""
+    },
+    {
+        "heroid": 49,
+        "name": "Hylos",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d6af7bfc2f67e7bc30dec2c3bd115f91.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_195ad9af866afaab415ae23a6be13b45.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Guard",
+            "Initiator"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_ce0d49d4803ed6c58a893d245a900c66.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_22d8716de16d99253671c2f9e59d9ef3.png",
+        "abilityshow": [
+            "100",
+            "20",
+            "80",
+            "30"
+        ],
+        "story": "Centaur guarding the Misty Mountains.",
+        "title": ""
+    },
+    {
+        "heroid": 50,
+        "name": "Zhask",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d023ab101f269f45930140b8317a23d0.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d8f170087cb2d5b71bb22a0a4664a927.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Chase",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_a9f6679fb8953d89ea1b53f6ad7ec4ba.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7e69b480400b37dd75614f0c8d033c37.png",
+        "abilityshow": [
+            "10",
+            "100",
+            "40",
+            "40"
+        ],
+        "story": "King of the Swarm who disrupts the balance of the universe.",
+        "title": ""
+    },
+    {
+        "heroid": 51,
+        "name": "Helcurt",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4fcae9e3a7db0bd9f49aea013839d217.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6abf0c552b59b8ca4cbc1af3662ef176.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Push",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_65be14656935f49b259fdeaee092307a.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ffd27cd02c46f7075caedcd51de80d9a.png",
+        "abilityshow": [
+            "30",
+            "50",
+            "50",
+            "50"
+        ],
+        "story": "The nightmare of the Abyss who's willing to betray anyone in order to survive.",
+        "title": ""
+    },
+    {
+        "heroid": 52,
+        "name": "Pharsa",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3de1398e008eadbcc2d711ba43c8c42.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_10151d43910e62f7aa9ce08df481a20f.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Burst",
+            "Poke"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_7104968f6a2006df3b593fb9dfb4fe1a.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_cccf53dbeacc789288ebc1fb63fcf7dd.png",
+        "abilityshow": [
+            "20",
+            "90",
+            "50",
+            "30"
+        ],
+        "story": "Crow Princess of Askati Forest.",
+        "title": ""
+    },
+    {
+        "heroid": 53,
+        "name": "Lesley",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fe343ddb9097b53f2d1e27d1c342add7.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08770893183018333f54a98e63c41ee3.png",
+        "sortlabel": [
+            "Marksman",
+            "Assassin"
+        ],
+        "speciality": [
+            "Finisher",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_5bbcf52dc317a3f64f8baabb577c00d0.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f4f42410c90f84e4d46b129d5e8887e8.png",
+        "abilityshow": [
+            "10",
+            "70",
+            "20",
+            "40"
+        ],
+        "story": "Adopted daughter of House Vance, a clandestine sniper.",
+        "title": ""
+    },
+    {
+        "heroid": 54,
+        "name": "Jawhead",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6761b204394f78d20d60c8bd707a28b2.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_bd87c30b6c7de6ae3b5aa56162c48c8b.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Charge",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_fb3df6d1b46ff9329745dab3bc2cd45b.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9f6109678fb8da14a3999f6b5cb00449.png",
+        "abilityshow": [
+            "60",
+            "30",
+            "60",
+            "50"
+        ],
+        "story": "Intelligent robot used to protect little Ailee.",
+        "title": ""
+    },
+    {
+        "heroid": 55,
+        "name": "Angela",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_07643d046530288eb0ff56f13b5e31dd.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c7e0183956b2c2fd6d3fa0b18fe46917.png",
+        "sortlabel": [
+            "Support"
+        ],
+        "speciality": [
+            "Guard",
+            "Support"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_de614a9c4390c722d08ff6c8902025d2.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a815a3adad8df99481700c84abaf3c41.png",
+        "abilityshow": [
+            "30",
+            "20",
+            "50",
+            "50"
+        ],
+        "story": "Artificial human made in Laboratory 1718.",
+        "title": ""
+    },
+    {
+        "heroid": 56,
+        "name": "Gusion",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b0de2d71aeb40a289c44288b1861b641.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c6cd232de60da5372a7101a203e56554.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Burst",
+            "Magic Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_7bbbe61245a37a818b24e95d097a02f0.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_82dbd20a7d0f274520895007898199e0.png",
+        "abilityshow": [
+            "30",
+            "90",
+            "10",
+            "80"
+        ],
+        "story": "Rebellious son of House Paxley.",
+        "title": ""
+    },
+    {
+        "heroid": 57,
+        "name": "Valir",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_88b057a88cdb623936e6d9d49e081aa7.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_bf16690876761b80822df90eb3320d69.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Damage",
+            "Guard"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_4128d471ee828dad8fe9cf20bfe6a32e.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_cd4c780c0ed639e2889c1131e56638ec.png",
+        "abilityshow": [
+            "20",
+            "70",
+            "70",
+            "40"
+        ],
+        "story": "Heir to Fire Throat, fire mage.",
+        "title": ""
+    },
+    {
+        "heroid": 58,
+        "name": "Martis",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe6e9c466dbcf83d81b6f37e311bfcd.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_cc8124b0eb6ca22d950b000744d69fbf.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Finisher",
+            "Charge"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_024f6f2bf8e25d31120c28ded1fe98db.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9691f86f84a553ea3982014738905f3f.png",
+        "abilityshow": [
+            "60",
+            "30",
+            "50",
+            "40"
+        ],
+        "story": "Persistent and victorious Asura King.",
+        "title": ""
+    },
+    {
+        "heroid": 59,
+        "name": "Uranus",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8d6008a84213058d99ce54a7d445f9d3.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2e15a0a506aaecd9b3de40a8cc9f7ec7.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Regen",
+            ""
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_5304cfee29d52b0623adcce7062c6f9a.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04a36899ac866eecb1d3a9c436cfb1d9.png",
+        "abilityshow": [
+            "100",
+            "20",
+            "20",
+            "30"
+        ],
+        "story": "Guardian made from lightning and air, guards the Celestial Palace.",
+        "title": ""
+    },
+    {
+        "heroid": 60,
+        "name": "Hanabi",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_aa86eb7d1c6db212d6cfd3921a8dfab2.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_8a9c1966feb34e85d7bdcc1ed01ffb5d.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_85db6d25e366e6b97f1e37a6d5e96ea9.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85d213390613bbc09220cf1d9f64c5c0.png",
+        "abilityshow": [
+            "20",
+            "70",
+            "80",
+            "10"
+        ],
+        "story": "Leader of the Scarlet Sect, in the Scarlet Shadow of the Cadia Riverlands.",
+        "title": ""
+    },
+    {
+        "heroid": 61,
+        "name": "Chang'e",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_91e96418810894dfb8b74a3c1a58cc8d.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_46cfe9c30e8a14f85b4d022496aca274.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Poke",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_1a83b36d153da3b8ff250a33df0abf6c.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4a2db83b0fb92b826f039955d1b8b5df.png",
+        "abilityshow": [
+            "40",
+            "80",
+            "20",
+            "30"
+        ],
+        "story": "Naughty and cute disciple of the Great Dragon.",
+        "title": ""
+    },
+    {
+        "heroid": 62,
+        "name": "Kaja",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_92b841a4898314b3a4f1996492bb0b24.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a23983833ad5bee7c83422c8ff727115.png",
+        "sortlabel": [
+            "Support",
+            "Fighter"
+        ],
+        "speciality": [
+            "Control",
+            "Charge"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_10e88c83ee50f042543e6bf497285028.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_87a88d7acc62a25869a5316147f3ce6a.png",
+        "abilityshow": [
+            "30",
+            "20",
+            "60",
+            "50"
+        ],
+        "story": "Leader of Nazar who guards the Celestial Palace.",
+        "title": ""
+    },
+    {
+        "heroid": 63,
+        "name": "Selena",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0e2fbc7a5f2e4ba45f7a740daf1910f6.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c3f967121519ae40509c5b2fdf52b19d.png",
+        "sortlabel": [
+            "Assassin",
+            "Mage"
+        ],
+        "speciality": [
+            "Initiator",
+            "Finisher"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_c1eed4818def633691e406d12d51650c.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_547ce6e3351ef7a46c02b51d0c4e452c.png",
+        "abilityshow": [
+            "30",
+            "70",
+            "100",
+            "70"
+        ],
+        "story": "Dark Elf girl who fell into the Abyss.",
+        "title": ""
+    },
+    {
+        "heroid": 64,
+        "name": "Aldous",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4222a9efc85e75188d3048bd7d042d32.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0eb32187d08f14779585a8be53b83f01.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Burst",
+            "Support"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_24b9d1fdef5ed3b9a569c408df850233.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c2f6866ffc797395ee35f97a74bbea20.png",
+        "abilityshow": [
+            "70",
+            "30",
+            "50",
+            "60"
+        ],
+        "story": "The guardian of the Minoan Labyrinth.",
+        "title": ""
+    },
+    {
+        "heroid": 65,
+        "name": "Claude",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_526c87ad0a41e34499fedefdc90357c6.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e1097b9d3e1d5e9f14600d32e8b18acd.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Burst",
+            "Chase"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_2321faee1f32b66b4bfa82f1cd7ce129.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_808e898e89986b917e146a9b5dcbbb57.png",
+        "abilityshow": [
+            "30",
+            "60",
+            "10",
+            "60"
+        ],
+        "story": "An excellent thief who comes and goes without a trace.",
+        "title": ""
+    },
+    {
+        "heroid": 66,
+        "name": "Vale",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6045061856a83522959d160c3a9e70b7.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2a7a8d1531a1c4f8524880413535348d.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Burst",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_a87514553259e474440f23055c229295.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80d3dd1f4cb10ffebb84289be46a3ecb.png",
+        "abilityshow": [
+            "20",
+            "100",
+            "70",
+            "20"
+        ],
+        "story": "The heir to Wind Fort, a wind mage.",
+        "title": ""
+    },
+    {
+        "heroid": 67,
+        "name": "Leomord",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a7527695da7a9a4ef62739861205b57b.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_554cdf13a7587fe08c5deed60132c61c.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Chase",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_ad98bd699e43dda5b217ef39cd1ef260.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6c205605c520867a534e4e74588a7208.png",
+        "abilityshow": [
+            "70",
+            "50",
+            "30",
+            "60"
+        ],
+        "story": "A sworn knight who vowed to guard Necrokeep until his last breath.",
+        "title": ""
+    },
+    {
+        "heroid": 68,
+        "name": "Lunox",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_86a0c8cc7b2fc883b59a6dd63c766aef.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e162688afdcaf3f6498af30badfe31c5.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Burst",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_7b6102875702371070406f9bd0feb3f6.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_69d35cd0c549a9bdbcf9fbfddf3122a5.png",
+        "abilityshow": [
+            "30",
+            "90",
+            "20",
+            "90"
+        ],
+        "story": "A miraculous creature born in Twilight Orb.",
+        "title": ""
+    },
+    {
+        "heroid": 69,
+        "name": "Hanzo",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_eabfca6f5eec4128626dba78d6aecc81.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_d2d28d2fcb060726fa27553920ca1a33.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Poke",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_79f053a70517e5544b93b0070bc7807d.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_746725e15c7577be6bb92b2665adf447.png",
+        "abilityshow": [
+            "70",
+            "80",
+            "20",
+            "70"
+        ],
+        "story": "Genius ninja in the Shadow Sect who is at the crossroads.",
+        "title": ""
+    },
+    {
+        "heroid": 70,
+        "name": "Belerick",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_29fa60e268304ff61fce131a158e0ad2.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5f2a9eca0bafd4ed8dc39a93c771b3af.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Crowd Control",
+            "Regen"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_8f60380e0242bd89dc298037d8b50dd4.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_69fdf773b92fbbf182f83d79abcf8d01.png",
+        "abilityshow": [
+            "90",
+            "40",
+            "100",
+            "10"
+        ],
+        "story": "A kind and fraternal elemental creature.",
+        "title": ""
+    },
+    {
+        "heroid": 71,
+        "name": "Kimmy",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_53a544034aaaf52b773be2d2450d16d4.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_61295dfefd369004e5e4a7f4fc86647b.png",
+        "sortlabel": [
+            "Marksman",
+            "Mage"
+        ],
+        "speciality": [
+            "Damage",
+            "Magic Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_b0488bd296b732c713092abb9feb427c.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_3fa938873a71f33898f26b19db654b7d.png",
+        "abilityshow": [
+            "45",
+            "70",
+            "82",
+            "90"
+        ],
+        "story": "A cool girl who loves technology and invention.",
+        "title": ""
+    },
+    {
+        "heroid": 72,
+        "name": "Thamuz",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fc38a2e465b275a72c3308152cab77d.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ff2f7804144608bd495bc7aca9163c5e.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Chase",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_0451a9cbf5db0669ca787a7102fd7499.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_43000699fe7c795c520f6f8ee3d8a191.png",
+        "abilityshow": [
+            "70",
+            "40",
+            "20",
+            "40"
+        ],
+        "story": "King of the Fire Demons.",
+        "title": ""
+    },
+    {
+        "heroid": 73,
+        "name": "Harith",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1b798782cb64820af74f9365dbbf4689.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d228a823b477fdf6c458c829c2e62bcf.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Chase",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_c0492b8461a173c5e22f141589716604.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0f81a3d82eb05c2c062fc6ea8b3d6578.png",
+        "abilityshow": [
+            "40",
+            "50",
+            "10",
+            "50"
+        ],
+        "story": "Leonin boy who came to the Moniyan Empire from Azrya.",
+        "title": ""
+    },
+    {
+        "heroid": 74,
+        "name": "Minsitthar",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1c74ac9a30e2fc665c118dce09a721d5.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c5d24a1dad6cef21de2698a4ed1d80ce.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Initiator",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_f05d35785d6a3f4ad0b93c3723e84de3.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dbfdfa2d0a3cc95cbc197d0a14d5ecd1.png",
+        "abilityshow": [
+            "60",
+            "40",
+            "80",
+            "40"
+        ],
+        "story": "A young king that led the people of Mahar Pura to victory against invaders.",
+        "title": ""
+    },
+    {
+        "heroid": 75,
+        "name": "Kadita",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_812f998f0d153ace42c9c55a10dd2533.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_42b40ae7741d2eb81148c8f1e1ff614c.png",
+        "sortlabel": [
+            "Mage",
+            "Assassin"
+        ],
+        "speciality": [
+            "Burst",
+            "Charge"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_b5bcc58bc3bd0462691c85c45a6c1cb1.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4e743d3fe80b1bb63bb8298ae1d1463f.png",
+        "abilityshow": [
+            "40",
+            "80",
+            "80",
+            "60"
+        ],
+        "story": "Beautiful and powerful mermaid queen.",
+        "title": ""
+    },
+    {
+        "heroid": 76,
+        "name": "Faramis",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e6b0467527533e7882bcb7967db96063.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_04e575d648d7f7ac1174f4369595c3a2.png",
+        "sortlabel": [
+            "Support",
+            "Mage"
+        ],
+        "speciality": [
+            "Guard",
+            "Charge"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_061a2f01346a777593c66b0f80fede0d.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4bed236fc260d9924b030e576793a26b.png",
+        "abilityshow": [
+            "40",
+            "60",
+            "10",
+            "40"
+        ],
+        "story": "A necromancer in Necrokeep who's determined to find a cure for the Mist.",
+        "title": ""
+    },
+    {
+        "heroid": 77,
+        "name": "Badang",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ae19689ee111addb7f2c0e6f8f30a4ec.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9fb1784545a48aef42241fc7a719c575.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Charge",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_8e686dc295c2659b63909e87b54e966e.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_484caceb9611d547774d6d936519a7d6.png",
+        "abilityshow": [
+            "40",
+            "70",
+            "50",
+            "10"
+        ],
+        "story": "Island hero who gained supernatural power after defeating the water monster.",
+        "title": ""
+    },
+    {
+        "heroid": 78,
+        "name": "Khufra",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6541be939404a7e45c28a30bd2f2aa16.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2fe99f4001211d18b3d2b95d0d3dc395.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Initiator",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_571398f137ae470543b88b51beabb5b6.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b1bd27f70c015094eaba5e48eacc4762.png",
+        "abilityshow": [
+            "90",
+            "20",
+            "100",
+            "50"
+        ],
+        "story": "Sealed ancient tyrant.",
+        "title": ""
+    },
+    {
+        "heroid": 79,
+        "name": "Granger",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f44e2457fb0f3539937c6a181e5dcbc4.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_a7729262d5b4abdc34ae5181e964c235.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Burst",
+            "Finisher"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_3342c4916fa8afc548bf6f5dc137ef26.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_22/100_9ed57f48f91012fd110935258cd1ab61.png",
+        "abilityshow": [
+            "30",
+            "70",
+            "10",
+            "40"
+        ],
+        "story": "A mysterious demon hunter that operates outside the conventions of the Church of Light. Always seen with a violin case in hand, he hunts down demons with his two soul-devouring weapons.",
+        "title": ""
+    },
+    {
+        "heroid": 80,
+        "name": "Guinevere",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c6ee596036c7b8e25760559ab67ff698.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_901bdd5d4432a2c0290dfc71df615a5a.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Burst",
+            "Magic Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_a79d26deb05231749de96de6b5794e61.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a34258a6365097da09d9513b620bc14a.png",
+        "abilityshow": [
+            "40",
+            "50",
+            "70",
+            "40"
+        ],
+        "story": "Aristocratic girl with a strange temperament, loved by her elder brother Lancelot.",
+        "title": ""
+    },
+    {
+        "heroid": 81,
+        "name": "Esmeralda",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08a84eb0f690c4c4f3865d924c704b25.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4661a64a2c6b724e7b67032fcbface27.png",
+        "sortlabel": [
+            "Tank",
+            "Mage"
+        ],
+        "speciality": [
+            "Regen",
+            "Mixed Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_d0d6c9e217dcb7a191bc81bbcdd08ce2.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f684768281faab70dea48d06fb72979e.png",
+        "abilityshow": [
+            "90",
+            "30",
+            "60",
+            "60"
+        ],
+        "story": "A mysterious astrologer.",
+        "title": ""
+    },
+    {
+        "heroid": 82,
+        "name": "Terizla",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7fe813b1c6b84e6fb234d0428c0c7cd7.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c4bb270c28c7be663f57e993b0d6d3d8.png",
+        "sortlabel": [
+            "Fighter",
+            "Tank"
+        ],
+        "speciality": [
+            "Burst",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_dabb8e730ac419d0c20cfe866797a610.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fcfbde52476bad8c8e67951240de854c.png",
+        "abilityshow": [
+            "90",
+            "30",
+            "40",
+            "20"
+        ],
+        "story": "Once an eccentric master smith, but now an avenger siding with the Abyss.",
+        "title": ""
+    },
+    {
+        "heroid": 83,
+        "name": "X.Borg",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3f372795b38be1e2b2037229928bfe57.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_efe9c7ed8d8f84f1bb0f88a3e08de5fc.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Regen",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_3c95c664318bd2e9c61d8d7e15578ff5.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9317fc6f999a43428c2fb9f7feda3cd7.png",
+        "abilityshow": [
+            "80",
+            "30",
+            "10",
+            "40"
+        ],
+        "story": "An uncontrollable flame that's determined to take revenge against Eruditio.",
+        "title": ""
+    },
+    {
+        "heroid": 84,
+        "name": "Ling",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_563f09baf8ad4675dace2f94af6436de.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_017bade52b9fc94bbc12615de6d75c08.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_d83c16e9dc3f3b5bf619250518a34d81.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_4405561c38db556d9cdc6a57b8642e66.png",
+        "abilityshow": [
+            "50",
+            "60",
+            "30",
+            "70"
+        ],
+        "story": "A graceful, free-soaring Finch and the Oriental Fighter who inherited the Vermilion Bird's power.",
+        "title": ""
+    },
+    {
+        "heroid": 85,
+        "name": "Dyrroth",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ce1031d6d4e49f33719bd3d833a9b45b.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_050b3045a7fd2b37f1017557f5695ca6.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Charge",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_7c963e904af6713c39623870a1fc7e71.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c999d5c218a0860ffbd7647a02baef1d.png",
+        "abilityshow": [
+            "50",
+            "50",
+            "20",
+            "40"
+        ],
+        "story": "Prince of the Empire who was kidnapped and used by the Abyss.",
+        "title": ""
+    },
+    {
+        "heroid": 86,
+        "name": "Lylia",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_84a089c2608b908b87c01ce7af5c3162.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_706573f138055c3df3df94948b4f26bd.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Push",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_781a08aa6bdfd386c6aab8261163217e.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_03146a311ed83c166b70bdb8fbcdc04f.png",
+        "abilityshow": [
+            "50",
+            "100",
+            "20",
+            "50"
+        ],
+        "story": "A funny and witted little witch.",
+        "title": ""
+    },
+    {
+        "heroid": 87,
+        "name": "Baxia",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c2ef0eba78b5b1c21c50cb9b696ac71b.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_80e408203869ca99302af195ac4f756c.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Support",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_2fee69d1c7794406d68ad208bde45b95.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ae43a252fda0fe996322ea8d27a6fe69.png",
+        "abilityshow": [
+            "100",
+            "30",
+            "60",
+            "20"
+        ],
+        "story": "The Mystic Tortoise of the Oriental Fighters, a shield-wielding, unstoppable wheel of flames.",
+        "title": ""
+    },
+    {
+        "heroid": 88,
+        "name": "Masha",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_087f15d931d74f75b577f5aff372ce25.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c97a314dc260dfad1311512ddc03f936.png",
+        "sortlabel": [
+            "Fighter",
+            "Tank"
+        ],
+        "speciality": [
+            "Push",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_cb32a0d6ed6e8fa174aab72e61d9e6da.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fcd3a37b34ea16ca6b485b88220e400.png",
+        "abilityshow": [
+            "50",
+            "70",
+            "30",
+            "30"
+        ],
+        "story": "Guardian of the Direbears.",
+        "title": ""
+    },
+    {
+        "heroid": 89,
+        "name": "Wanwan",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d52dd5ccf7d25cb590dc57e48c1df8d2.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_44bfa1dc44deb8d7620605faaa9ffae7.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_4ef161612790082db12838fc04c86643.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_47/100_c042bfb106853182a8c38ae5386ceb77.png",
+        "abilityshow": [
+            "20",
+            "60",
+            "30",
+            "60"
+        ],
+        "story": "The Agile Tiger of the Oriental Fighters and a lively young girl who wields the Crossbow of Tang.",
+        "title": ""
+    },
+    {
+        "heroid": 90,
+        "name": "Silvanna",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1582f0613b6c03e1f4f147a3da23d70a.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5e7b297af7c6e32a420b897aa4998071.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Initiator",
+            "Magic Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_c996b205b5d35cab1a1e8bdb993a7606.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fe98dd2e19bb6c29591763d1d11a3eb7.png",
+        "abilityshow": [
+            "50",
+            "40",
+            "70",
+            "20"
+        ],
+        "story": "Princess of the Moniyan Empire and queen regent.",
+        "title": ""
+    },
+    {
+        "heroid": 91,
+        "name": "Cecilion",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c0bb649180f1f1bfd0ba81b78ee35844.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_045399c265021d47da6512e6de20b64f.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Poke",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_fe2bed368a4a7419ac558327b07d1b2b.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_af02ce891528cd3576858589d8d33d8d.png",
+        "abilityshow": [
+            "40",
+            "100",
+            "50",
+            "40"
+        ],
+        "story": "Carmilla's Blood Demon lover.",
+        "title": ""
+    },
+    {
+        "heroid": 92,
+        "name": "Carmilla",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_429bbf3c9f1b16aa45bdfdeac80761e5.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6fb8f120dafdcbc1b5da2a2667016ad5.png",
+        "sortlabel": [
+            "Support",
+            "Tank"
+        ],
+        "speciality": [
+            "Crowd Control",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_e14d40da9b16a9c748844c25e4ac3668.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_358d6ad9cff97fc3bfef8a2bd4acbadd.png",
+        "abilityshow": [
+            "90",
+            "20",
+            "80",
+            "40"
+        ],
+        "story": "The girl who became a Blood Demon for love.",
+        "title": ""
+    },
+    {
+        "heroid": 93,
+        "name": "Atlas",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f7b43ccce0423507f62bbe555e9f2395.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d974ac796678180ff8724b88e192898b.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Crowd Control",
+            "Initiator"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_92f134bd7485a1596b2e8d1c5d28da9e.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1fa7b5bb5ddc89246d65e199c6e3b22f.png",
+        "abilityshow": [
+            "80",
+            "10",
+            "90",
+            "50"
+        ],
+        "story": "Abysmal Sea creature who broke free from the seal.",
+        "title": ""
+    },
+    {
+        "heroid": 94,
+        "name": "Popol and Kupa",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_08f8fb30b35d029e172e0ed9be3be09d.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1acbb23b9a50f412104047a60eb18808.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Push",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_4e209cd7493f719891e723627e91628b.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5eb4653a13ff08c8f4138dc38ae4e110.png",
+        "abilityshow": [
+            "30",
+            "70",
+            "70",
+            "50"
+        ],
+        "story": "Boy and an Icefield Wolf, partners who understand each other well.",
+        "title": ""
+    },
+    {
+        "heroid": 95,
+        "name": "Yu Zhong",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dfed2cf32adddc8c9a87fd679321a977.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_9823ce4fe5eb89c0082b24f6d5ea67f6.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Regen",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_c751a6b50bf2c583747097430c575fc9.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_7d5ad4d511f5257137028f19e9ee973f.png",
+        "abilityshow": [
+            "70",
+            "40",
+            "70",
+            "70"
+        ],
+        "story": "Yu Zhong, the reincarnation of the Black Dragon, intends to unify the Cadia Riverlands through conquest and usher in an era of prosperity.",
+        "title": ""
+    },
+    {
+        "heroid": 96,
+        "name": "Luo Yi",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e8f1e6dd0d7864b66bda10ef65242dd6.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_103541726507f5ce102689f04fe215e8.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Support",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_45ed52f05d2288e0c87ca858d7f66f23.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_74fe63bd31cc092aed923543a115b7bd.png",
+        "abilityshow": [
+            "20",
+            "100",
+            "40",
+            "50"
+        ],
+        "story": "Seeking to revive an ancient past, she is the sole being who has mastered the secrets of Yin and Yang.",
+        "title": ""
+    },
+    {
+        "heroid": 97,
+        "name": "Benedetta",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_11bf645722b931631c3a63d5be7da068.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b4a5e537894bdc00787e80e4d3ada5dd.png",
+        "sortlabel": [
+            "Assassin",
+            "Fighter"
+        ],
+        "speciality": [
+            "Chase",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_299a32ea6c9287501faff530532617b5.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_eceefa7ba07f093d71a30852f0051b7a.png",
+        "abilityshow": [
+            "60",
+            "50",
+            "20",
+            "70"
+        ],
+        "story": "Female warrior defending the Barren Lands against demon invasion.",
+        "title": ""
+    },
+    {
+        "heroid": 98,
+        "name": "Khaleed",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9f6754dc95d5afbacfae441ae43b6051.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_540a6a9d343842674ce002082366ec9d.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Damage",
+            "Regen"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_2c011296c9c9a46013034896c2898d52.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_216ea76d9188164c58950885b3962ba1.png",
+        "abilityshow": [
+            "80",
+            "50",
+            "50",
+            "50"
+        ],
+        "story": "A sand-walking intrepid Clan leader.",
+        "title": ""
+    },
+    {
+        "heroid": 99,
+        "name": "Barats",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dd47c9cac5a4848e8d4d0246a6739fec.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6495be044c2d28106e200f6918391d54.png",
+        "sortlabel": [
+            "Tank",
+            "Fighter"
+        ],
+        "speciality": [
+            "Damage",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_adbd4f14b53db6513f0481705ed8ee48.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2ff4a47ddc77ec9e4e5a522fd696d2c4.png",
+        "abilityshow": [
+            "100",
+            "30",
+            "90",
+            "40"
+        ],
+        "story": "Adventurer riding a dragon lizard.",
+        "title": ""
+    },
+    {
+        "heroid": 100,
+        "name": "Brody",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0dd42d343fcd6298ca65eec2a65a6b77.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f18e45a9a4cb45897e1f614593ff4497.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Burst",
+            "Finisher"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_59bbe13e82041e67c6b1797b8776a461.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dc8216bde520fd7be7a2e9e6fad90191.png",
+        "abilityshow": [
+            "40",
+            "70",
+            "50",
+            "50"
+        ],
+        "story": "Mysterious man whose right hand was corroded and who lost his memory.",
+        "title": ""
+    },
+    {
+        "heroid": 101,
+        "name": "Yve",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b98852e20d4e492a55c25565ed1a101e.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d9b0a1d92b1c4b3643d6332fd66aa8e6.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Poke",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_58b166125e207a31bd2c8e57b3dc34d7.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_d8cc30b9d273a81bd838afc691852b6f.png",
+        "abilityshow": [
+            "40",
+            "80",
+            "40",
+            "70"
+        ],
+        "story": "Keeper of the equilibrium of the universe.",
+        "title": ""
+    },
+    {
+        "heroid": 102,
+        "name": "Mathilda",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d7c6f7896c10c7938994ba4c5a28c9c1.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24d08ed788a9f5984bcf3b732ddcaf04.png",
+        "sortlabel": [
+            "Support",
+            "Assassin"
+        ],
+        "speciality": [
+            "Initiator",
+            "Guard"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_1592c36a17a9b513d8b12ddb16e33d8c.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_515a1949e9c3dc1ee1a281f45d42b085.png",
+        "abilityshow": [
+            "80",
+            "20",
+            "40",
+            "40"
+        ],
+        "story": "A brave girl who stands up and doesn't fear power.",
+        "title": ""
+    },
+    {
+        "heroid": 103,
+        "name": "Paquito",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e57019805d928c886bd0ae01b8947c30.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e2b6d9c6d82b4a27f0bb2710c8ead3e8.png",
+        "sortlabel": [
+            "Fighter",
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_02466a857c46760a78265713eab7e39c.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1986ebcc24fc3eb28f59f079c15be612.png",
+        "abilityshow": [
+            "60",
+            "50",
+            "40",
+            "80"
+        ],
+        "story": "The hero who uses his two fists to protect hope and love.",
+        "title": ""
+    },
+    {
+        "heroid": 104,
+        "name": "Gloo",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_088134981d9d9753f9d77648c0361fa3.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_c472fe0233e5ef84a3ac9ba4a229d09f.png",
+        "sortlabel": [
+            "Tank"
+        ],
+        "speciality": [
+            "Regen",
+            "Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_973cc7ce68b9e7b2a90a78e8ba7069b8.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_642/100_8b401d50920f2359060a9c7a3c833df1.png",
+        "abilityshow": [
+            "100",
+            "30",
+            "100",
+            "70"
+        ],
+        "story": "A mysterious creature that can split into many smaller ones.",
+        "title": ""
+    },
+    {
+        "heroid": 105,
+        "name": "Beatrix",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_564a14b35d0f172bdd7b3d04b33a1d68.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4687eca874feec9017b448a0b9110d65.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_3ae0e1386765b20b92fce0757fda6083.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c1acd7cbd828f0c5d291e48a0f7c018d.png",
+        "abilityshow": [
+            "30",
+            "80",
+            "10",
+            "70"
+        ],
+        "story": "A confident inventor girl.",
+        "title": ""
+    },
+    {
+        "heroid": 106,
+        "name": "Phoveus",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9abf963fae03d641bac528f6fab2b8c2.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_06/100_af21c0dd8b5308c27974bff900803a9a.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Regen",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_250c4be7ee7b3d5d17248d9e7050fb15.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_06/100_6bfe8ca7e60623a5261eac20e2b39d34.png",
+        "abilityshow": [
+            "60",
+            "80",
+            "50",
+            "40"
+        ],
+        "story": "A former soldier from the border of the Empire who took on the chains of sin to defend his people.",
+        "title": ""
+    },
+    {
+        "heroid": 107,
+        "name": "Natan",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4431d3412e6cff8fccc5cdf67454a08b.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_da02742f59013365923b216420bc4082.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Burst",
+            "Magic Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_41f7572b10bc5aeb16fe39482f95b018.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6736ef8c230d82576c3710e9fc248e11.png",
+        "abilityshow": [
+            "20",
+            "60",
+            "20",
+            "20"
+        ],
+        "story": "The savior who travels through time and space.",
+        "title": ""
+    },
+    {
+        "heroid": 108,
+        "name": "Aulus",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b18a4e09124187587ef09826dee69ec3.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_40839957990dbb59a9e5ec4da9f85a8e.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Damage",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_4beb05b58c46e8c88d06e88a50cf67e2.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_55751a5c47dc36cb6c1da705c5f5c687.png",
+        "abilityshow": [
+            "60",
+            "60",
+            "10",
+            "40"
+        ],
+        "story": "A Leonin warrior that fights to prove himself.",
+        "title": ""
+    },
+    {
+        "heroid": 109,
+        "name": "Aamon",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_e38297f23f285b88272894aa3c797c09.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_b3a7602fe7ffd1e54bf8ea79ceadfa72.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Magic Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_51ae6eb2b9d766791b1c60acb30d550f.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c9e4d330229c88b1e78ef88ce9db4223.png",
+        "abilityshow": [
+            "30",
+            "70",
+            "10",
+            "50"
+        ],
+        "story": "The aloof Duke of Castle Aberleen.",
+        "title": ""
+    },
+    {
+        "heroid": 110,
+        "name": "Valentina",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_646f22a778efda450ce3470683bd01c2.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24837021ec9d7aaf41b13fa55b6d13c9.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Burst",
+            "Finisher"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_f171b947b9c40f0560f191147054facb.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_7923ebf470d0e963e9978cb21eb25780.png",
+        "abilityshow": [
+            "50",
+            "90",
+            "80",
+            "80"
+        ],
+        "story": "Former head of House Paxley who'd stop at nothing to revive her lover.",
+        "title": ""
+    },
+    {
+        "heroid": 111,
+        "name": "Edith",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_098891b01e7093a49228688bbad0cde8.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_daab57918de01a6d5bb2ed6f45808a7e.png",
+        "sortlabel": [
+            "Tank",
+            "Marksman"
+        ],
+        "speciality": [
+            "Control",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_3bd6f7e58da50b63652d18cf083ac256.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_352f65059bc1180ae0fc066003d628e0.png",
+        "abilityshow": [
+            "70",
+            "30",
+            "100",
+            "30"
+        ],
+        "story": "Forsaken Warden with sealed memories.",
+        "title": ""
+    },
+    {
+        "heroid": 112,
+        "name": "Floryn",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_fd49844ff3811155b149ea6bf67be24e.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5a57b91e4914cf071a3849e352e530a5.png",
+        "sortlabel": [
+            "Support"
+        ],
+        "speciality": [
+            "Poke",
+            "Guard"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_0f62ea30587c34b8855af43a801da156.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5168f0a54304b2f20f976a1ffa96e1dc.png",
+        "abilityshow": [
+            "60",
+            "10",
+            "70",
+            "10"
+        ],
+        "story": "A kind-hearted girl who is determined to spread greenery throughout the world.",
+        "title": ""
+    },
+    {
+        "heroid": 113,
+        "name": "Yin",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c0452c120fee6e5b762d7a2dd1c24cb8.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_ee1c12c84f49514a30e405fb5c617796.png",
+        "sortlabel": [
+            "Fighter",
+            "Assassin"
+        ],
+        "speciality": [
+            "Burst",
+            "Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_a33bb8889533a8104dd3b84f5e89f5a5.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_95836476311e2026077d87eb2373a281.png",
+        "abilityshow": [
+            "50",
+            "60",
+            "80",
+            "40"
+        ],
+        "story": "A young martial artist on a journey to defeat the Evil God that dwells within him.",
+        "title": ""
+    },
+    {
+        "heroid": 114,
+        "name": "Melissa",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_a19559a08211b32279c27d584478a4b2.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1fa7436301fea3f13fbcd4772051d22d.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_c1a541876dc0c0434e645592a402ff35.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_566636fa333651ef67931deade4eef84.png",
+        "abilityshow": [
+            "20",
+            "90",
+            "40",
+            "40"
+        ],
+        "story": "A girl with cursed needles who runs a tailor shop and solves problems for clients.",
+        "title": ""
+    },
+    {
+        "heroid": 115,
+        "name": "Xavier",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_24165af02711d3154a80b97d22042bef.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_df0a8dfc494f85ed9bbc4512cc1e5d3c.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Damage",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_08ccab74114f009b1f5993aedd1dd7a1.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_2f4e01714176adb56ca70eef1460e461.png",
+        "abilityshow": [
+            "20",
+            "100",
+            "80",
+            "30"
+        ],
+        "story": "Former member of the Knights of Light who's determined to forge a path of his own.",
+        "title": ""
+    },
+    {
+        "heroid": 116,
+        "name": "Julian",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_af290850533bcaeaf7630d573969a74c.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_5511ddc0ad2789b525f32ef572b017eb.png",
+        "sortlabel": [
+            "Assassin",
+            "Fighter"
+        ],
+        "speciality": [
+            "Chase",
+            "Magic Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_8359a497952c5215b70b47373e168cfe.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_44891c699fb1c00fc4a7fa59ea95b8b3.png",
+        "abilityshow": [
+            "60",
+            "60",
+            "70",
+            "20"
+        ],
+        "story": "A Raven assassin of the Church of Light, a young boy who's in search of his home\u2026",
+        "title": ""
+    },
+    {
+        "heroid": 117,
+        "name": "Fredrinn",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3834313607fefe7bf2c895f042d60f10.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_dea170bfd5f26c41fb04e5edf72afedb.png",
+        "sortlabel": [
+            "Fighter",
+            "Tank"
+        ],
+        "speciality": [
+            "Damage",
+            "Chase"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_8fb05a9ade9e12e696c9e6b15991c0f3.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_3f574825bd9192094f047a4abc6d5d05.png",
+        "abilityshow": [
+            "80",
+            "50",
+            "60",
+            "40"
+        ],
+        "story": "A master treasure appraiser in Los Pecados accumulating wealth and searching for his lost friend.",
+        "title": ""
+    },
+    {
+        "heroid": 118,
+        "name": "Joy",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_1ecb59cb5508be26cd90ac70d2177b76.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_d3a3a55c22000ae78732fed8cba2efef.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_574083a409728dd6b47f89f9059932ac.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_6b5570b0e557e36501b4228fcdfcf164.png",
+        "abilityshow": [
+            "30",
+            "70",
+            "10",
+            "90"
+        ],
+        "story": "The \"Child of Miracle\" who returned to the Leonins after years of wandering.",
+        "title": ""
+    },
+    {
+        "heroid": 119,
+        "name": "Novaria",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9e662ec509bca27d4eeaac6c05d670d1.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_57eeea6d5bd8d21229de8df79751db9f.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Burst",
+            "Poke"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_616ae60984f5efeb204c00dadf5930cc.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_12c811236741ae8e3fbdaa2d884b30a2.png",
+        "abilityshow": [
+            "30",
+            "90",
+            "30",
+            "60"
+        ],
+        "story": "The young girl who seeks to rebuild the Star Atlas in order to solve the secrets of the Stars.",
+        "title": ""
+    },
+    {
+        "heroid": 120,
+        "name": "Arlott",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_177c32c19a2ad87c028fd9a6fcf08cb1.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f666faa5ec6be5353f10dcd1d8997a42.png",
+        "sortlabel": [
+            "Fighter",
+            "Assassin"
+        ],
+        "speciality": [
+            "Charge",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_c860ff197fcb694b90c0b7b7beb8ddc0.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_01450fec4397f8780ce0d11ab652c73d.png",
+        "abilityshow": [
+            "60",
+            "60",
+            "50",
+            "50"
+        ],
+        "story": "A demon human hybrid wielding two lances with a thirst for vengeance against both the Church and demons.",
+        "title": ""
+    },
+    {
+        "heroid": 121,
+        "name": "Ixia",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_ad36ae3824bc4853dcc2f48fef767be1.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_f070d82521ecd2e14d4ef3f25880830a.png",
+        "sortlabel": [
+            "Marksman"
+        ],
+        "speciality": [
+            "Finisher",
+            "Damage"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_edfaa19ee9ec75545eb74e675886059c.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_c5f758bd1141327d36f2c77928268ab7.png",
+        "abilityshow": [
+            "30",
+            "70",
+            "50",
+            "40"
+        ],
+        "story": "The leader of Bad Soul and self-proclaimed inventor, she wields a homemade weapon powered by a stolen Starlium reactor.",
+        "title": ""
+    },
+    {
+        "heroid": 122,
+        "name": "Nolan",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_cf1a85704a0636d70f49113b2dd119bd.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_9012ee9f73fbb4db4e1953e5fb5172e1.png",
+        "sortlabel": [
+            "Assassin"
+        ],
+        "speciality": [
+            "Chase",
+            "Burst"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_77ac5c8f1a48a10e7c1beb78ac862c2e.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_0495066df0d828c149e7fe89aa63078b.png",
+        "abilityshow": [
+            "30",
+            "60",
+            "20",
+            "60"
+        ],
+        "story": "A scholar that wanders the universe with split souls to save his daughter.",
+        "title": ""
+    },
+    {
+        "heroid": 123,
+        "name": "Cici",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_83e246a50d2a27fe0d18f991dcb1bccb.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_60e3e11da30f404c77fff9e22d3bdc72.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Damage",
+            "Regen"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_d83b2e9d43ebc7247cba68643a411bd3.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_4f970eb4b44b8c9fff2c511d8e856ff4.png",
+        "abilityshow": [
+            "50",
+            "60",
+            "30",
+            "20"
+        ],
+        "story": "A cheerful performer who spreads fun and wonderment wherever she goes.",
+        "title": ""
+    },
+    {
+        "heroid": 124,
+        "name": "Chip",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_264d149bf047331fc3eb6d7d886b38d1.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_79224d297f14377ad2eda8543432330d.png",
+        "sortlabel": [
+            "Support",
+            "Tank"
+        ],
+        "speciality": [
+            "Support",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage/100_2d61834632c94c00344b2ae0e08354e2.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage/100_85e15c66733cab7d8d73f7f725f31f1e.png",
+        "abilityshow": [
+            "80",
+            "20",
+            "60",
+            "60"
+        ],
+        "story": "A carefree, genetically enhanced fox that wields advanced portal technology.",
+        "title": ""
+    },
+    {
+        "heroid": 125,
+        "name": "Zhuxin",
+        "painting": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_8991b456c4482e7170422f3d77d16b00.png",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_595f85bc90df3889c711c6b1f02dc02d.png",
+        "sortlabel": [
+            "Mage"
+        ],
+        "speciality": [
+            "Damage",
+            "Crowd Control"
+        ],
+        "squarehead": "https://akmweb.youngjoygame.com/web/svnres/file/mlbb/homepage_92/100_8b6a9cadd1c781a56ae68b2a1ebe8d8f.jpg",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_92/100_13cfeec4bec7a27a09677e519f1ef9d2.png",
+        "abilityshow": [
+            "40",
+            "70",
+            "90",
+            "30"
+        ],
+        "story": "A mysterious young woman who guides the ember butterflies using her Lantern of Spirits.",
+        "title": ""
+    },
+    {
+        "heroid": 126,
+        "name": "Suyou",
+        "painting": "",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_20/100_5e4ca70172332dde18bb1dc158ccc5c8.png",
+        "sortlabel": [
+            "Assassin",
+            "Fighter"
+        ],
+        "speciality": [
+            "Chase",
+            "Burst"
+        ],
+        "squarehead": "",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_20/100_422ffc7849e8bb01629d2423054ed410.png",
+        "abilityshow": [
+            "60",
+            "60",
+            "50",
+            "70"
+        ],
+        "story": "An exorcist from Zhu'an who has inherited the power of the Immortal Nuo.",
+        "title": ""
+    },
+    {
+        "heroid": 127,
+        "name": "Lukas",
+        "painting": "",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_20/100_63040edd0cf15b815fcbbb8b2d08d7f7.png",
+        "sortlabel": [
+            "Fighter"
+        ],
+        "speciality": [
+            "Regen",
+            "Damage"
+        ],
+        "squarehead": "",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_20/100_454c13b2de7b7d1a20fbf553c620510d.png",
+        "abilityshow": [
+            "70",
+            "50",
+            "60",
+            "30"
+        ],
+        "story": "A legendary Sacred Beast that can take the form of a rambunctious young man.",
+        "title": ""
+    },
+    {
+        "heroid": 128,
+        "name": "Kalea",
+        "painting": "",
+        "head": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_4f3d4649e301c76daf20bd8811f3095c.png",
+        "sortlabel": [
+            "Support",
+            "Fighter"
+        ],
+        "speciality": [
+            "Control",
+            "Regen"
+        ],
+        "squarehead": "",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_64/100_9c5f2904026ba88b7aba8c9b2722f4ad.png",
+        "abilityshow": [
+            "60",
+            "20",
+            "90",
+            "50"
+        ],
+        "story": "With her serpent tail, this proud descendant of the Great Serpent swims gracefully through the Vonetis Sea, aspiring to one day carry the full power of her heritage.",
+        "title": ""
+    }
+]

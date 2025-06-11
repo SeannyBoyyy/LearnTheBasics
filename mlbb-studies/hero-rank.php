@@ -215,7 +215,7 @@
                             <li class='list-group-item'>Ban Rate: <strong class='text-light-blue'>$banRate%</strong></li>
                         </ul>
                         <div class='mt-3'>
-                            <span class='synergy-label'>Top Synergy Heroes:</span><br>";
+                            <span class='synergy-label'>Counter Heroes:</span><br>";
 
                 if (isset($record['data']['sub_hero'])) {
                     foreach ($record['data']['sub_hero'] as $subHero) {

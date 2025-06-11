@@ -414,10 +414,11 @@ $matches_to_show = array_slice($matches, $start_index, $matches_per_page);
                 </div>
             </div>
             <div class="row g-3 mt-4">
+                <h4 class="text-danger mb-3"><i class="bi bi-people-fill me-2"></i>Opponents Analysis</h4>
                 <!-- New: Heroes that beat this team most often -->
                 <div class="col-md-6 col-lg-3">
                     <div class="bg-dark rounded-3 p-3 text-center shadow-sm">
-                        <div class="fw-bold text-danger mb-2">Heroes That Beat Us Most</div>
+                        <div class="fw-bold text-primary mb-2">Heroes That Beat Us Most</div>
                         <?php
                         // Calculate heroes that beat this team most often
                         $heroes_beat_us = [];
@@ -468,7 +469,7 @@ $matches_to_show = array_slice($matches, $start_index, $matches_per_page);
                 <!-- New: Enemy Bans Against Us (All Matches) -->
                 <div class="col-md-6 col-lg-3">
                     <div class="bg-dark rounded-3 p-3 text-center shadow-sm">
-                        <div class="fw-bold text-warning mb-2">Enemy Bans Against Us</div>
+                        <div class="fw-bold text-success mb-2">Enemy Bans Against Us</div>
                         <?php
                         // Calculate enemy bans against this team
                         $enemy_bans_against_us = [];
@@ -512,7 +513,7 @@ $matches_to_show = array_slice($matches, $start_index, $matches_per_page);
                 <!-- New: Enemy Bans When We Lost -->
                 <div class="col-md-6 col-lg-3">
                     <div class="bg-dark rounded-3 p-3 text-center shadow-sm">
-                        <div class="fw-bold text-danger mb-2">Enemy Bans When We Lost</div>
+                        <div class="fw-bold text-warning mb-2">Enemy Bans When We Lost</div>
                         <?php
                         // Calculate enemy bans in matches we lost
                         $enemy_bans_when_we_lost = [];

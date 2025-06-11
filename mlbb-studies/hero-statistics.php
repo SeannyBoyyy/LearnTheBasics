@@ -4,9 +4,16 @@ $hero_id = isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] >= 1 && 
     ? intval($_GET['id'])
     : 128;
 
-// Fetch hero list for dropdown and for hero images
-$hero_list_url = "https://mlbb-stats.ridwaanhall.com/api/hero-list/";
-$hero_list_json = @file_get_contents($hero_list_url);
+// --------- LOCAL FILES: Use your downloaded hero_cache/ files ---------
+
+$cache_dir = __DIR__ . '/hero_cache/';
+
+// Fetch hero list for dropdown and for hero images (from local hero-list.json)
+$hero_list_path = $cache_dir . 'hero-list.json';
+if (!file_exists($hero_list_path)) {
+    die("Local hero list not found. Please download it using your script.");
+}
+$hero_list_json = file_get_contents($hero_list_path);
 $hero_list = $hero_list_json ? json_decode($hero_list_json, true) : [];
 
 // Build a mapping of heroid => head image for quick lookup
@@ -17,16 +24,16 @@ foreach ($hero_list as $id => $hero) {
     }
 }
 
-// Fetch hero detail
-$api_url = "https://mlbb-stats.ridwaanhall.com/api/hero-detail/{$hero_id}";
-$response = @file_get_contents($api_url);
-if ($response === false) {
-    die("Failed to fetch hero data.");
+// Fetch hero detail (from local {id}.json)
+$detail_path = $cache_dir . "$hero_id.json";
+if (!file_exists($detail_path)) {
+    die("Local hero detail for ID $hero_id not found. Please download it using your script.");
 }
+$response = file_get_contents($detail_path);
 $data = json_decode($response, true);
 
 if (!isset($data['data']['records'][0]['data'])) {
-    die("Invalid API response.");
+    die("Invalid hero detail data.");
 }
 
 $record = $data['data']['records'][0]['data'];
@@ -63,23 +70,32 @@ function convertFontColorToSpan($html) {
     return $html;
 }
 
-// --- Hero Detail Stats API Integration ---
-$detail_stats_api_url = "https://mlbb-stats.ridwaanhall.com/api/hero-detail-stats/" . intval($hero_id) . "/";
-$detail_stats_json = @file_get_contents($detail_stats_api_url);
-$detail_stats_data = $detail_stats_json ? json_decode($detail_stats_json, true) : null;
-$detail_stats = $detail_stats_data['data']['records'][0]['data'] ?? null;
+// --- Hero Detail Stats (from local hero-detail-stats-{id}.json) ---
+$detail_stats_path = $cache_dir . "hero-detail-stats-$hero_id.json";
+$detail_stats = null;
+if (file_exists($detail_stats_path)) {
+    $detail_stats_json = file_get_contents($detail_stats_path);
+    $detail_stats_data = $detail_stats_json ? json_decode($detail_stats_json, true) : null;
+    $detail_stats = $detail_stats_data['data']['records'][0]['data'] ?? null;
+}
 
-// --- Hero Counter API Integration ---
-$counter_api_url = "https://mlbb-stats.ridwaanhall.com/api/hero-counter/" . intval($hero_id) . "/";
-$counter_json = @file_get_contents($counter_api_url);
-$counter_data = $counter_json ? json_decode($counter_json, true) : null;
-$counter_stats = $counter_data['data']['records'][0]['data'] ?? null;
+// --- Hero Counter (from local hero-counter-{id}.json) ---
+$counter_path = $cache_dir . "hero-counter-$hero_id.json";
+$counter_stats = null;
+if (file_exists($counter_path)) {
+    $counter_json = file_get_contents($counter_path);
+    $counter_data = $counter_json ? json_decode($counter_json, true) : null;
+    $counter_stats = $counter_data['data']['records'][0]['data'] ?? null;
+}
 
-// --- Hero Compatibility API Integration ---
-$compat_api_url = "https://mlbb-stats.ridwaanhall.com/api/hero-compatibility/" . intval($hero_id) . "/";
-$compat_json = @file_get_contents($compat_api_url);
-$compat_data = $compat_json ? json_decode($compat_json, true) : null;
-$compat_stats = $compat_data['data']['records'][0]['data'] ?? null;
+// --- Hero Compatibility (from local hero-compatibility-{id}.json) ---
+$compat_path = $cache_dir . "hero-compatibility-$hero_id.json";
+$compat_stats = null;
+if (file_exists($compat_path)) {
+    $compat_json = file_get_contents($compat_path);
+    $compat_data = $compat_json ? json_decode($compat_json, true) : null;
+    $compat_stats = $compat_data['data']['records'][0]['data'] ?? null;
+}
 
 ?>
 <!DOCTYPE html>
@@ -291,9 +307,9 @@ $compat_stats = $compat_data['data']['records'][0]['data'] ?? null;
           <label for="id" class="form-label"><i class="bi bi-search"></i> Select Hero:</label>
           <select class="form-select" id="id" name="id" required>
             <option value="">-- Choose Hero --</option>
-            <?php foreach ($hero_list as $id => $heroData): ?>
-              <option value="<?= htmlspecialchars($id) ?>" <?= $hero_id == $id ? 'selected' : '' ?>>
-                <?= is_array($heroData) && isset($heroData['name']) ? htmlspecialchars($heroData['name']) : htmlspecialchars($heroData) ?>
+            <?php foreach (array_reverse($hero_list) as $heroData): ?>
+              <option value="<?= htmlspecialchars($heroData['heroid']) ?>" <?= $hero_id == $heroData['heroid'] ? 'selected' : '' ?>>
+                <?= htmlspecialchars($heroData['name']) ?>
               </option>
             <?php endforeach; ?>
           </select>
@@ -392,12 +408,14 @@ $compat_stats = $compat_data['data']['records'][0]['data'] ?? null;
                       if ($heroid && !empty($hero_head_map[$heroid])) {
                           $img = $hero_head_map[$heroid];
                       } else if ($heroid) {
-                          // Fallback: fetch from hero-detail API
-                          $detail_url = "https://mlbb-stats.ridwaanhall.com/api/hero-detail/{$heroid}";
-                          $detail_json = @file_get_contents($detail_url);
-                          $detail_data = $detail_json ? json_decode($detail_json, true) : null;
-                          if (!empty($detail_data['data']['records'][0]['data']['hero']['data']['head'])) {
-                              $img = $detail_data['data']['records'][0]['data']['hero']['data']['head'];
+                          // Fallback: try to read from local cache
+                          $herodetail_path = $cache_dir . "$heroid.json";
+                          if (file_exists($herodetail_path)) {
+                              $herodetail_json = file_get_contents($herodetail_path);
+                              $herodetail_data = $herodetail_json ? json_decode($herodetail_json, true) : null;
+                              if (!empty($herodetail_data['data']['records'][0]['data']['hero']['data']['head'])) {
+                                  $img = $herodetail_data['data']['records'][0]['data']['hero']['data']['head'];
+                              }
                           }
                       }
                     ?>
@@ -442,11 +460,13 @@ $compat_stats = $compat_data['data']['records'][0]['data'] ?? null;
                       if ($heroid && !empty($hero_head_map[$heroid])) {
                           $img = $hero_head_map[$heroid];
                       } else if ($heroid) {
-                          $detail_url = "https://mlbb-stats.ridwaanhall.com/api/hero-detail/{$heroid}";
-                          $detail_json = @file_get_contents($detail_url);
-                          $detail_data = $detail_json ? json_decode($detail_json, true) : null;
-                          if (!empty($detail_data['data']['records'][0]['data']['hero']['data']['head'])) {
-                              $img = $detail_data['data']['records'][0]['data']['hero']['data']['head'];
+                          $herodetail_path = $cache_dir . "$heroid.json";
+                          if (file_exists($herodetail_path)) {
+                              $herodetail_json = file_get_contents($herodetail_path);
+                              $herodetail_data = $herodetail_json ? json_decode($herodetail_json, true) : null;
+                              if (!empty($herodetail_data['data']['records'][0]['data']['hero']['data']['head'])) {
+                                  $img = $herodetail_data['data']['records'][0]['data']['hero']['data']['head'];
+                              }
                           }
                       }
                     ?>
@@ -483,11 +503,13 @@ $compat_stats = $compat_data['data']['records'][0]['data'] ?? null;
                       if ($heroid && !empty($hero_head_map[$heroid])) {
                           $img = $hero_head_map[$heroid];
                       } else if ($heroid) {
-                          $detail_url = "https://mlbb-stats.ridwaanhall.com/api/hero-detail/{$heroid}";
-                          $detail_json = @file_get_contents($detail_url);
-                          $detail_data = $detail_json ? json_decode($detail_json, true) : null;
-                          if (!empty($detail_data['data']['records'][0]['data']['hero']['data']['head'])) {
-                              $img = $detail_data['data']['records'][0]['data']['hero']['data']['head'];
+                          $herodetail_path = $cache_dir . "$heroid.json";
+                          if (file_exists($herodetail_path)) {
+                              $herodetail_json = file_get_contents($herodetail_path);
+                              $herodetail_data = $herodetail_json ? json_decode($herodetail_json, true) : null;
+                              if (!empty($herodetail_data['data']['records'][0]['data']['hero']['data']['head'])) {
+                                  $img = $herodetail_data['data']['records'][0]['data']['hero']['data']['head'];
+                              }
                           }
                       }
                     ?>
@@ -531,11 +553,13 @@ $compat_stats = $compat_data['data']['records'][0]['data'] ?? null;
                       if ($heroid && !empty($hero_head_map[$heroid])) {
                           $img = $hero_head_map[$heroid];
                       } else if ($heroid) {
-                          $detail_url = "https://mlbb-stats.ridwaanhall.com/api/hero-detail/{$heroid}";
-                          $detail_json = @file_get_contents($detail_url);
-                          $detail_data = $detail_json ? json_decode($detail_json, true) : null;
-                          if (!empty($detail_data['data']['records'][0]['data']['hero']['data']['head'])) {
-                              $img = $detail_data['data']['records'][0]['data']['hero']['data']['head'];
+                          $herodetail_path = $cache_dir . "$heroid.json";
+                          if (file_exists($herodetail_path)) {
+                              $herodetail_json = file_get_contents($herodetail_path);
+                              $herodetail_data = $herodetail_json ? json_decode($herodetail_json, true) : null;
+                              if (!empty($herodetail_data['data']['records'][0]['data']['hero']['data']['head'])) {
+                                  $img = $herodetail_data['data']['records'][0]['data']['hero']['data']['head'];
+                              }
                           }
                       }
                     ?>
@@ -572,11 +596,13 @@ $compat_stats = $compat_data['data']['records'][0]['data'] ?? null;
                       if ($heroid && !empty($hero_head_map[$heroid])) {
                           $img = $hero_head_map[$heroid];
                       } else if ($heroid) {
-                          $detail_url = "https://mlbb-stats.ridwaanhall.com/api/hero-detail/{$heroid}";
-                          $detail_json = @file_get_contents($detail_url);
-                          $detail_data = $detail_json ? json_decode($detail_json, true) : null;
-                          if (!empty($detail_data['data']['records'][0]['data']['hero']['data']['head'])) {
-                              $img = $detail_data['data']['records'][0]['data']['hero']['data']['head'];
+                          $herodetail_path = $cache_dir . "$heroid.json";
+                          if (file_exists($herodetail_path)) {
+                              $herodetail_json = file_get_contents($herodetail_path);
+                              $herodetail_data = $herodetail_json ? json_decode($herodetail_json, true) : null;
+                              if (!empty($herodetail_data['data']['records'][0]['data']['hero']['data']['head'])) {
+                                  $img = $herodetail_data['data']['records'][0]['data']['hero']['data']['head'];
+                              }
                           }
                       }
                     ?>
@@ -637,6 +663,6 @@ $compat_stats = $compat_data['data']['records'][0]['data'] ?? null;
     }
   });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

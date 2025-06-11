@@ -4,29 +4,32 @@ $hero_id = isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] >= 1 && 
     ? intval($_GET['id'])
     : 128;
 
-// Fetch hero list for dropdown and for hero images
-$hero_list_url = "https://mlbb-stats.ridwaanhall.com/api/hero-list/";
-$hero_list_json = @file_get_contents($hero_list_url);
+// Load hero list from local cache (downloaded file)
+$hero_list_path = __DIR__ . '/hero_cache/hero-list.json';
+if (!file_exists($hero_list_path)) {
+    die("Local hero list not found. Please download it using your script.");
+}
+$hero_list_json = file_get_contents($hero_list_path);
 $hero_list = $hero_list_json ? json_decode($hero_list_json, true) : [];
 
 // Build a mapping of heroid => head image for quick lookup
 $hero_head_map = [];
-foreach ($hero_list as $id => $hero) {
-    if (is_array($hero) && isset($hero['head'])) {
-        $hero_head_map[$id] = $hero['head'];
+foreach ($hero_list as $hero) {
+    if (is_array($hero) && isset($hero['heroid']) && isset($hero['head'])) {
+        $hero_head_map[$hero['heroid']] = $hero['head'];
     }
 }
 
-// Fetch hero detail
-$api_url = "https://mlbb-stats.ridwaanhall.com/api/hero-detail/{$hero_id}";
-$response = @file_get_contents($api_url);
-if ($response === false) {
-    die("Failed to fetch hero data.");
+// Fetch hero detail from local cache
+$detail_path = __DIR__ . "/hero_cache/$hero_id.json";
+if (!file_exists($detail_path)) {
+    die("Local hero detail for ID $hero_id not found. Please download it using your script.");
 }
+$response = file_get_contents($detail_path);
 $data = json_decode($response, true);
 
 if (!isset($data['data']['records'][0]['data'])) {
-    die("Invalid API response.");
+    die("Invalid hero detail data.");
 }
 
 $record = $data['data']['records'][0]['data'];
@@ -46,11 +49,16 @@ if (!empty($record['painting'])) {
 $roles = isset($hero['sortlabel']) ? array_filter($hero['sortlabel']) : [];
 $specialities = isset($hero['speciality']) ? $hero['speciality'] : [];
 
-// Fetch hero skill combos
-$combo_api_url = "https://mlbb-stats.ridwaanhall.com/api/hero-skill-combo/{$hero_id}";
-$combo_json = @file_get_contents($combo_api_url);
-$combo_data = $combo_json ? json_decode($combo_json, true) : [];
-$skill_combos = isset($combo_data['data']['records']) ? $combo_data['data']['records'] : [];
+// Fetch hero skill combos from local cache
+$combo_path = __DIR__ . "/hero_cache/skill-combo-$hero_id.json";
+if (file_exists($combo_path)) {
+    $combo_json = file_get_contents($combo_path);
+    $combo_data = $combo_json ? json_decode($combo_json, true) : [];
+    $skill_combos = isset($combo_data['data']['records']) ? $combo_data['data']['records'] : [];
+} else {
+    // fallback: no combos
+    $skill_combos = [];
+}
 
 // Function to convert <font color="..."> to <span style="color:...">
 function convertFontColorToSpan($html) {
@@ -283,9 +291,9 @@ function convertFontColorToSpan($html) {
           <label for="id" class="form-label"><i class="bi bi-search"></i> Select Hero:</label>
           <select class="form-select" id="id" name="id" required>
             <option value="">-- Choose Hero --</option>
-            <?php foreach ($hero_list as $id => $heroData): ?>
-              <option value="<?= htmlspecialchars($id) ?>" <?= $hero_id == $id ? 'selected' : '' ?>>
-                <?= is_array($heroData) && isset($heroData['name']) ? htmlspecialchars($heroData['name']) : htmlspecialchars($heroData) ?>
+            <?php foreach (array_reverse($hero_list) as $heroData): ?>
+              <option value="<?= htmlspecialchars($heroData['heroid']) ?>" <?= $hero_id == $heroData['heroid'] ? 'selected' : '' ?>>
+                <?= htmlspecialchars($heroData['name']) ?>
               </option>
             <?php endforeach; ?>
           </select>

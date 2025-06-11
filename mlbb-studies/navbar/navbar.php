@@ -49,7 +49,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='dashboard.php') echo ' active'; ?>" href="dashboard.php" style="font-size: 1.08rem; font-weight: 500;">
-            Dashboard
+            Analyze a Team
           </a>
         </li>
       </ul>
