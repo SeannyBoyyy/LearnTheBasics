@@ -51,8 +51,8 @@
       </div>
       <!-- Quick Links: Admin & Contact -->
       <div class="col-md-4 mb-3 mb-md-0 text-center">
-        <a href="admin_login.php" class="btn btn-link link-light text-decoration-none px-2 mx-2" style="font-weight:600;">
-          <i class="fa fa-user-shield me-2"></i>Admin Login
+        <a href="admin/admin_dashboard.php" class="btn btn-link link-light text-decoration-none px-2 mx-2" style="font-weight:600;">
+          <i class="fa fa-user-shield me-2"></i>Admin
         </a>
         <span class="vr mx-2 text-secondary"></span>
         <button type="button" class="btn btn-link link-info text-decoration-none px-2 mx-2" style="font-weight:600;" data-bs-toggle="modal" data-bs-target="#contactModal">

@@ -112,7 +112,9 @@ if (file_exists($compat_path)) {
       font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     }
     .hero-img {
-      height: 250px;
+      height: 360px; /* increased from 250px */
+      max-height: 60vh; /* keep it responsive */
+      width: 100%;
       object-fit: contain;
       border-radius: 18px;
       box-shadow: 0 2px 16px rgba(44,62,80,0.13);
@@ -241,16 +243,18 @@ if (file_exists($compat_path)) {
       background: #468be6;
     }
     @media (max-width: 576px) {
-      .hero-img { height: 140px; }
+      .hero-img { height: 200px; }
       .skill-icon { height: 36px; width: 36px; }
       .hero-icon { height: 44px; width: 44px; }
       .section-title { font-size: 1.3rem; }
       .search-form { padding: 12px 8px 8px 8px; }
     }
+    /*
     .container-fluid {
       padding-left: 0;
       padding-right: 0;
     }
+    */
     @media (min-width: 768px) {
       .container-fluid > .row > .col-12 {
         padding-left: 24px;

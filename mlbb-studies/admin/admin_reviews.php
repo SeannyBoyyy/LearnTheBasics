@@ -33,18 +33,95 @@ $result = $mysqli->query($query);
       min-height: 100vh;
       font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     }
-    .table-container {
-      background: #1e222d;
-      border-radius: 14px;
-      padding: 24px;
-      box-shadow: 0 4px 24px rgba(110,168,254,0.07);
+    .reviews-container {
+      background: #181c24;
+      border-radius: 18px;
+      padding: 36px 32px;
+      margin-top: 48px;
+      box-shadow: 0 8px 36px rgba(110,168,254,0.13);
+      border: 1.5px solid #6ea8fe33;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .table th, .table td {
+    .reviews-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .reviews-header i {
+      font-size: 2rem;
+      color: #6ea8fe;
+    }
+    .table-responsive {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(110,168,254,0.09);
+    }
+    .table-dark th, .table-dark td {
       vertical-align: middle;
+      background: #202534 !important;
+      border-color: #31394b;
+      font-size: 1.04rem;
     }
+    .table-dark thead th {
+      color: #6ea8fe;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      font-size: 1.06rem;
+      background: #1b1f29 !important;
+      border-bottom: 2px solid #425b7d;
+    }
+    .rating-stars {
+      font-size: 1.2rem;
+      letter-spacing: 0.02em;
+      color: #ffcc40;
+      font-weight: 600;
+      text-shadow: 0 1px 2px #0005;
+    }
+    .review-comment {
+      color: #e3ebf7;
+      font-size: 1.01rem;
+      white-space: pre-line;
+      max-width: 350px;
+      word-break: break-word;
+    }
+    .review-username {
+      color: #80b1f7;
+      font-weight: 500;
+    }
+    .review-date {
+      color: #bfc9d1;
+      font-size: 0.97rem;
+    }
+    .btn-danger {
+      min-width: 82px;
+    }
+    /* Modal Customization */
     .modal-content {
       background-color: #212529;
       color: #fff;
+      border-radius: 10px;
+      border: 1.5px solid #6ea8fe33;
+    }
+    .modal-header {
+      border-bottom: 1px solid #425b7d;
+    }
+    .modal-footer {
+      border-top: 1px solid #425b7d;
+    }
+    @media (max-width: 768px) {
+      .reviews-container {
+        padding: 20px 5px;
+      }
+      .reviews-header h2 {
+        font-size: 1.3rem;
+      }
+      .review-comment {
+        max-width: 150px;
+        font-size: 0.98rem;
+      }
     }
   </style>
 </head>
@@ -52,9 +129,13 @@ $result = $mysqli->query($query);
 
 <?php include '../navbar/admin_navbar.php'; ?>
 
-<div class="container mt-5">
-  <h2 class="text-center text-light mb-4"><i class="bi bi-chat-dots-fill"></i> User Ratings & Reviews</h2>
+<?php include '../navbar/admin_sidepanel.php'; ?>
 
+<div class="container reviews-container">
+  <div class="reviews-header">
+    <i class="bi bi-chat-dots-fill"></i>
+    <h2 class="text-light m-0">User Ratings & Reviews</h2>
+  </div>
   <?php if (isset($_SESSION['message'])): ?>
     <div class="alert alert-info alert-dismissible fade show" role="alert">
       <?= $_SESSION['message'] ?>
@@ -62,48 +143,51 @@ $result = $mysqli->query($query);
     </div>
     <?php unset($_SESSION['message']); ?>
   <?php endif; ?>
-
-  <div class="table-container mt-4">
-    <table class="table table-dark table-hover table-bordered align-middle text-center">
-      <thead class="table-secondary text-dark">
+  <div class="table-responsive">
+    <table class="table table-dark table-hover align-middle mb-0">
+      <thead>
         <tr>
-          <th>ID</th>
-          <th>Username</th>
-          <th>Rating</th>
+          <th style="width:60px;">ID</th>
+          <th style="width:180px;">Username</th>
+          <th style="width:120px;">Rating</th>
           <th>Comment</th>
-          <th>Date Posted</th>
-          <th>Action</th>
+          <th style="width:160px;">Date Posted</th>
+          <th style="width:110px;">Action</th>
         </tr>
       </thead>
       <tbody>
         <?php if ($result && $result->num_rows > 0): ?>
           <?php while ($row = $result->fetch_assoc()): ?>
             <tr>
-              <td><?= $row['id'] ?></td>
-              <td><?= htmlspecialchars($row['username']) ?></td>
-              <td><span class="text-warning"><?= str_repeat('★', $row['rating']) ?></span></td>
-              <td><?= htmlspecialchars($row['comment']) ?></td>
-              <td><?= $row['created_at'] ?></td>
+              <td><?= htmlspecialchars($row['id']) ?></td>
+              <td class="review-username"><?= htmlspecialchars($row['username']) ?></td>
+              <td>
+                <span class="rating-stars"><?= str_repeat('★', (int)$row['rating']) ?>
+                  <span class="text-muted"><?= str_repeat('☆', 5 - (int)$row['rating']) ?></span>
+                </span>
+                <span class="text-muted ms-1">(<?= (int)$row['rating'] ?>/5)</span>
+              </td>
+              <td class="review-comment"><?= nl2br(htmlspecialchars($row['comment'])) ?></td>
+              <td class="review-date"><?= date('Y-m-d H:i', strtotime($row['created_at'])) ?></td>
               <td>
                 <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal<?= $row['id'] ?>">
                   <i class="bi bi-trash"></i> Delete
                 </button>
-
                 <!-- Delete Modal -->
                 <div class="modal fade" id="deleteModal<?= $row['id'] ?>" tabindex="-1" aria-labelledby="deleteModalLabel<?= $row['id'] ?>" aria-hidden="true">
                   <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content bg-dark text-light">
+                    <div class="modal-content">
                       <div class="modal-header">
                         <h5 class="modal-title"><i class="bi bi-exclamation-triangle text-danger"></i> Confirm Delete</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="modal-body">
                         Are you sure you want to delete this review?
-                        <div class="mt-2 text-muted"><small>"<?= htmlspecialchars($row['comment']) ?>"</small></div>
+                        <div class="mt-2 text-warning"><small>"<?= htmlspecialchars($row['comment']) ?>"</small></div>
                       </div>
                       <div class="modal-footer">
                         <form method="POST" action="delete_review.php">
-                          <input type="hidden" name="review_id" value="<?= $row['id'] ?>">
+                          <input type="hidden" name="review_id" value="<?= htmlspecialchars($row['id']) ?>">
                           <button type="submit" class="btn btn-danger">Delete</button>
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                         </form>
@@ -116,7 +200,7 @@ $result = $mysqli->query($query);
           <?php endwhile; ?>
         <?php else: ?>
           <tr>
-            <td colspan="6" class="text-muted">No reviews found.</td>
+            <td colspan="6" class="text-center text-secondary py-4">No reviews found.</td>
           </tr>
         <?php endif; ?>
       </tbody>

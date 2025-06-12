@@ -26,9 +26,11 @@ for ($i = 1; $i <= 128; $i++) {
         'squarehead'  => $hero['squarehead'] ?? '',
     ];
 }
+// Sort by descending heroid (most recently released hero first)
 usort($hero_list, function($a, $b) {
-    return strcmp($a['name'], $b['name']);
+    return $b['heroid'] <=> $a['heroid'];
 });
+
 function filter_heroes($heroes, $role_filter) {
     if ($role_filter === 'All') return $heroes;
     $filtered = [];

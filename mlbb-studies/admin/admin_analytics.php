@@ -76,7 +76,7 @@ $mysqli->close();
 <html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <title>Admin Dashboard - MLBB Studies</title>
+  <title>Admin Analytics - MLBB Studies</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -87,50 +87,123 @@ $mysqli->close();
       min-height: 100vh;
       font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     }
-    .dashboard-box {
+    .analytics-container {
       background: #181c24;
+      border-radius: 18px;
+      padding: 36px 32px;
+      margin-top: 48px;
+      box-shadow: 0 8px 36px rgba(110,168,254,0.13);
       border: 1.5px solid #6ea8fe33;
-      border-radius: 14px;
-      padding: 24px;
-      text-align: center;
-      box-shadow: 0 4px 24px rgba(110,168,254,0.07);
-      transition: 0.3s ease;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .dashboard-box:hover {
-      background: #202534;
-      transform: translateY(-4px);
-      box-shadow: 0 8px 36px rgba(110,168,254,0.15);
+    .analytics-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
     }
-    .dashboard-icon {
-      font-size: 32px;
+    .analytics-header i {
+      font-size: 2rem;
       color: #6ea8fe;
-      margin-bottom: 12px;
     }
     .dashboard-label {
       font-weight: 600;
       color: #bfc9d1;
+      margin-top: 8px;
+      margin-bottom: 2px;
     }
     .dashboard-value {
-      font-size: 1.8rem;
+      font-size: 2rem;
       font-weight: bold;
       color: #ffffff;
     }
+    .dashboard-box {
+      background: #181c24;
+      border: 1.5px solid #6ea8fe33;
+      border-radius: 14px;
+      padding: 30px 24px;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(110,168,254,0.07);
+      transition: 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .dashboard-box:before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 90px;
+      height: 90px;
+      background: radial-gradient(circle, #6ea8fe22 60%, transparent 100%);
+      z-index: 0;
+    }
+    .dashboard-box:hover {
+      background: #202534;
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 8px 36px rgba(110,168,254,0.15);
+    }
+    .dashboard-icon {
+      font-size: 2.2rem;
+      color: #6ea8fe;
+      margin-bottom: 12px;
+      z-index: 1;
+      position: relative;
+    }
     .chart-container { 
-      margin: 40px auto; 
+      margin: 40px auto 0 auto;
+      padding: 18px 24px 24px 24px;
+      background: #202534;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(110,168,254,0.09);
+      max-width: 900px;
+    }
+    .chart-container h3 {
+      color: #6ea8fe;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+      letter-spacing: 0.01em;
     }
     canvas { 
       background: #2e2e3e; 
       border-radius: 10px; 
       padding: 10px;
     }
+    @media (max-width: 991px) {
+      .analytics-container {
+        padding: 20px 5px;
+      }
+      .dashboard-value {
+        font-size: 1.2rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .chart-container {
+        padding: 10px 2px;
+      }
+      .dashboard-icon {
+        font-size: 1.3rem;
+      }
+      .dashboard-box {
+        padding: 18px 8px;
+      }
+    }
   </style>
 </head>
 <body>
   
   <?php include '../navbar/admin_navbar.php'; ?>
+  
+  <?php include '../navbar/admin_sidepanel.php'; ?>
 
-  <div class="container mt-5">
-    <h2 class="text-center text-light mb-4"><i class="bi bi-speedometer2"></i> Chart Analytics </h2>
+  <div class="container analytics-container">
+    <div class="analytics-header">
+      <i class="bi bi-bar-chart-line"></i>
+      <h2 class="text-light m-0">Chart Analytics</h2>
+    </div>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="dashboard-box">
@@ -155,11 +228,11 @@ $mysqli->close();
       </div>
     </div>
     <div class="mt-5 chart-container">
-      <h3>Daily New Users and Drafts</h3>
+      <h3><i class="bi bi-calendar-range"></i> Daily New Users and Drafts</h3>
       <canvas id="dailyChart"></canvas>
     </div>
     <div class="mt-5 chart-container">
-      <h3>Teams Created Per User</h3>
+      <h3><i class="bi bi-person-lines-fill"></i> Teams Created Per User</h3>
       <canvas id="perUserChart"></canvas>
     </div>
   </div>
@@ -180,16 +253,20 @@ const dailyChart = new Chart(document.getElementById('dailyChart'), {
             {
                 label: 'New Users',
                 data: dailyUsers,
-                backgroundColor: 'rgba(46, 204, 113, 0.6)',
+                backgroundColor: 'rgba(46, 204, 113, 0.7)',
                 borderColor: '#2ecc71',
-                borderWidth: 1
+                borderWidth: 1,
+                borderRadius: 6,
+                barPercentage: 0.7
             },
             {
                 label: 'Drafts Created',
                 data: dailyDrafts,
-                backgroundColor: 'rgba(52, 152, 219, 0.6)',
+                backgroundColor: 'rgba(52, 152, 219, 0.7)',
                 borderColor: '#3498db',
-                borderWidth: 1
+                borderWidth: 1,
+                borderRadius: 6,
+                barPercentage: 0.7
             }
         ]
     },
@@ -211,6 +288,13 @@ const dailyChart = new Chart(document.getElementById('dailyChart'), {
                 labels: {
                     color: 'white'
                 }
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        return `${context.dataset.label}: ${context.parsed.y}`;
+                    }
+                }
             }
         }
     }
@@ -224,9 +308,11 @@ const perUserChart = new Chart(document.getElementById('perUserChart'), {
         datasets: [{
             label: 'Teams Created',
             data: teamCounts,
-            backgroundColor: 'rgba(231, 76, 60, 0.6)',
+            backgroundColor: 'rgba(231, 76, 60, 0.7)',
             borderColor: '#e74c3c',
-            borderWidth: 1
+            borderWidth: 1,
+            borderRadius: 6,
+            barPercentage: 0.7
         }]
     },
     options: {
@@ -246,6 +332,13 @@ const perUserChart = new Chart(document.getElementById('perUserChart'), {
             legend: {
                 labels: {
                     color: 'white'
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    label: function(context) {
+                        return `Teams Created: ${context.parsed.y}`;
+                    }
                 }
             }
         }

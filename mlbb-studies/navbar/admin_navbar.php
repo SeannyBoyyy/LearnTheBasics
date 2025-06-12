@@ -43,13 +43,8 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-rank.php') echo ' active'; ?>" href="../hero-rank.php" style="font-size: 1.08rem; font-weight: 500;">
-            Hero Ranks
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='dashboard.php') echo ' active'; ?>" href="../dashboard.php" style="font-size: 1.08rem; font-weight: 500;">
-            Dashboard
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='admin_messages.php') echo ' active'; ?>" href="admin_messages.php" style="font-size: 1.08rem; font-weight: 500;">
+            Contact Messages
           </a>
         </li>
       </ul>

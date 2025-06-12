@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
 
-  <?php include '../navbar/admin_navbar.php'; ?>
+  <?php include '../navbar/admin_login.php'; ?>
 
   <!-- Use the same Bootstrap and style setup -->
   <div class="login-card">

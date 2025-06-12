@@ -18,8 +18,8 @@
 <!-- Place this right after <body> -->
 <nav class="navbar navbar-expand-lg navbar-dark shadow-sm sticky-top" style="background: linear-gradient(90deg, #232837 60%, #181c24 100%); border-bottom: 2px solid #6ea8fe33; font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="index.php" style="font-size: 1.35rem; letter-spacing: 1px; font-weight: 700;">
-      <img src="./logo/logo-png.png" alt="MLBB" width="56" height="56" class="rounded-circle border border-2 border-primary shadow-sm" style="background: #232837;">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="../index.php" style="font-size: 1.35rem; letter-spacing: 1px; font-weight: 700;">
+      <img src="../logo/logo-png.png" alt="MLBB" width="56" height="56" class="rounded-circle border border-2 border-primary shadow-sm" style="background: #232837;">
       <span style="color: #6ea8fe;">MLBB Studies</span>
     </a>
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mlbbNavbar" aria-controls="mlbbNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,27 +28,27 @@
     <div class="collapse navbar-collapse" id="mlbbNavbar">
       <ul class="navbar-nav ms-auto gap-lg-2">
         <li class="nav-item">
-          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='heroes.php') echo ' active'; ?>" href="heroes.php" style="font-size: 1.08rem; font-weight: 500;">
-            Heroes
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-details.php') echo ' active'; ?>" href="../hero-details.php" style="font-size: 1.08rem; font-weight: 500;">
+            Hero Details
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-statistics.php') echo ' active'; ?>" href="hero-statistics.php" style="font-size: 1.08rem; font-weight: 500;">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-statistics.php') echo ' active'; ?>" href="../hero-statistics.php" style="font-size: 1.08rem; font-weight: 500;">
             Hero Statistics
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-position.php') echo ' active'; ?>" href="hero-position.php" style="font-size: 1.08rem; font-weight: 500;">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-position.php') echo ' active'; ?>" href="../hero-position.php" style="font-size: 1.08rem; font-weight: 500;">
             Hero Positions
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-rank.php') echo ' active'; ?>" href="hero-rank.php" style="font-size: 1.08rem; font-weight: 500;">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='hero-rank.php') echo ' active'; ?>" href="../hero-rank.php" style="font-size: 1.08rem; font-weight: 500;">
             Hero Ranks
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='dashboard.php') echo ' active'; ?>" href="dashboard.php" style="font-size: 1.08rem; font-weight: 500;">
+          <a class="nav-link px-3<?php if(basename($_SERVER['PHP_SELF'])=='dashboard.php') echo ' active'; ?>" href="../dashboard.php" style="font-size: 1.08rem; font-weight: 500;">
             Analyze a Team
           </a>
         </li>

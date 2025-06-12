@@ -36,33 +36,89 @@ $mysqli->close();
       min-height: 100vh;
       font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     }
-    .dashboard-box {
+    .dashboard-container {
       background: #181c24;
+      border-radius: 18px;
+      padding: 36px 32px;
+      margin-top: 48px;
+      box-shadow: 0 8px 36px rgba(110,168,254,0.13);
       border: 1.5px solid #6ea8fe33;
-      border-radius: 14px;
-      padding: 24px;
-      text-align: center;
-      box-shadow: 0 4px 24px rgba(110,168,254,0.07);
-      transition: 0.3s ease;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .dashboard-box:hover {
-      background: #202534;
-      transform: translateY(-4px);
-      box-shadow: 0 8px 36px rgba(110,168,254,0.15);
+    .dashboard-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 28px;
     }
-    .dashboard-icon {
-      font-size: 32px;
+    .dashboard-header i {
+      font-size: 2rem;
       color: #6ea8fe;
-      margin-bottom: 12px;
     }
     .dashboard-label {
       font-weight: 600;
       color: #bfc9d1;
+      margin-top: 8px;
+      margin-bottom: 2px;
     }
     .dashboard-value {
-      font-size: 1.8rem;
+      font-size: 2.1rem;
       font-weight: bold;
       color: #ffffff;
+    }
+    .dashboard-box {
+      background: #181c24;
+      border: 1.5px solid #6ea8fe33;
+      border-radius: 14px;
+      padding: 30px 24px;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(110,168,254,0.07);
+      transition: 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .dashboard-box:before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 90px;
+      height: 90px;
+      background: radial-gradient(circle, #6ea8fe22 60%, transparent 100%);
+      z-index: 0;
+    }
+    .dashboard-box:hover {
+      background: #202534;
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 8px 36px rgba(110,168,254,0.15);
+    }
+    .dashboard-icon {
+      font-size: 2.4rem;
+      color: #6ea8fe;
+      margin-bottom: 12px;
+      z-index: 1;
+      position: relative;
+    }
+    @media (max-width: 991px) {
+      .dashboard-container {
+        padding: 20px 5px;
+      }
+      .dashboard-header h2 {
+        font-size: 1.3rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .dashboard-value {
+        font-size: 1.4rem;
+      }
+      .dashboard-icon {
+        font-size: 1.7rem;
+      }
+      .dashboard-box {
+        padding: 18px 8px;
+      }
     }
   </style>
 </head>
@@ -70,8 +126,13 @@ $mysqli->close();
   
   <?php include '../navbar/admin_navbar.php'; ?>
   
-  <div class="container mt-5">
-    <h2 class="text-center text-light mb-4"><i class="bi bi-speedometer2"></i> Admin Dashboard</h2>
+  <?php include '../navbar/admin_sidepanel.php'; ?>
+
+  <div class="container dashboard-container">
+    <div class="dashboard-header">
+      <i class="bi bi-speedometer2"></i>
+      <h2 class="text-light m-0">Admin Dashboard</h2>
+    </div>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="dashboard-box">
