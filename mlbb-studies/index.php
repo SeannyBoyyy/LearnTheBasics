@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Swiper JS CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#317EFB">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  <meta name="mobile-web-app-capable" content="yes">
+
   <!-- Sweetalert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
@@ -682,5 +688,18 @@
   </script>
   <!-- Bootstrap JS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(function (registration) {
+          console.log('ServiceWorker registered:', registration);
+        })
+        .catch(function (error) {
+          console.log('ServiceWorker registration failed:', error);
+        });
+    });
+  }
+  </script>
 </body>
 </html>
