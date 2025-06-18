@@ -2977,5 +2977,29 @@
         ],
         "story": "With her serpent tail, this proud descendant of the Great Serpent swims gracefully through the Vonetis Sea, aspiring to one day carry the full power of her heritage.",
         "title": ""
+    },
+    {
+        "heroid": 129,
+        "name": "Zetian",
+        "painting": "",
+        "head": "https://akmweb.youngjoygame.com/web/gms/image/20a263b2adb23ad40cd955b9abf4bbb0.jpg",
+        "sortlabel": [
+            "Mid Lane",
+            ""
+        ],
+        "speciality": [
+            "Damage",
+            "Crowd Control"
+        ],
+        "squarehead": "",
+        "smallmap": "https://akmweb.youngjoygame.com/web/svnres/img/mlbb/homepage_1_9_90/100_22dc8b16ea98a735027c3141b74ef841.png",
+        "abilityshow": [
+            "40",
+            "70",
+            "50",
+            "20"
+        ],
+        "story": "Recognized by the Heavens and cherished by her people, the Celestial Empress of the Cadia Riverlands ascends to bring peace to the mortal realm.",
+        "title": ""
     }
 ]

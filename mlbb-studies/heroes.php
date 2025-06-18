@@ -6,7 +6,7 @@ $roles = ['All', 'Tank', 'Fighter', 'Assassin', 'Mage', 'Marksman', 'Support'];
 $role_filter = isset($_GET['role']) ? $_GET['role'] : 'All';
 
 $hero_list = [];
-for ($i = 1; $i <= 128; $i++) {
+for ($i = 1; $i <= 129; $i++) {
     $file = $save_dir . "$i.json";
     if (!file_exists($file)) continue;
     $json = @file_get_contents($file);
@@ -54,6 +54,7 @@ $display_heroes = filter_heroes($hero_list, $role_filter);
 <head>
   <meta charset="UTF-8">
   <title>All Heroes - Mobile Legends</title>
+  <link rel="icon" href="logo/logo-v2.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {

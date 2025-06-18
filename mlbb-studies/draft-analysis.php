@@ -91,19 +91,21 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['your_team_id'], $_POS
     $enemy_team_id = intval($_POST['enemy_team_id']);
     $pick_order = $_POST['pick_order'] ?? '';
     $winner = $_POST['winner'] ?? '';
+    $ban_count = isset($_POST['ban_count']) ? intval($_POST['ban_count']) : 10; // default to 10
+    $bans_per_team = ($ban_count == 6) ? 3 : 5;
     $your_picks = $_POST['your_team'] ?? [];
     $enemy_picks = $_POST['enemy_team'] ?? [];
-    $your_bans = $_POST['your_bans'] ?? [];
-    $enemy_bans = $_POST['enemy_bans'] ?? [];
+    $your_bans = array_values(array_filter($_POST['your_bans'] ?? [], function($v){return $v !== '';}));
+    $enemy_bans = array_values(array_filter($_POST['enemy_bans'] ?? [], function($v){return $v !== '';}));  
 
     if ($your_team_id === $enemy_team_id) {
         $error = "You cannot select the same team for both sides.";
     } elseif (
         !$pick_order || !$winner ||
         count($your_picks) !== 5 || count($enemy_picks) !== 5 ||
-        count($your_bans) !== 5 || count($enemy_bans) !== 5
+        count($your_bans) !== $bans_per_team || count($enemy_bans) !== $bans_per_team
     ) {
-        $error = "Please complete all picks, bans, and select a winner.";
+        $error = "Please complete all picks, bans, and select a winner. (Check ban count)";
     } else {
         // Assign JSON to variables before binding
         $your_picks_json = json_encode($your_picks);
@@ -111,11 +113,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['your_team_id'], $_POS
         $your_bans_json = json_encode($your_bans);
         $enemy_bans_json = json_encode($enemy_bans);
 
-        // Save draft to database
+        // Save draft to database (add ban_count column)
         $mysqli = get_db_connection();
-        $stmt = $mysqli->prepare("INSERT INTO drafts (user_id, your_team_id, enemy_team_id, pick_order, your_picks, enemy_picks, your_bans, enemy_bans, winner) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt = $mysqli->prepare("INSERT INTO drafts (user_id, your_team_id, enemy_team_id, pick_order, your_picks, enemy_picks, your_bans, enemy_bans, winner, ban_count) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param(
-            'iiissssss',
+            'iiissssssi',
             $user_id,
             $your_team_id,
             $enemy_team_id,
@@ -124,7 +126,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['your_team_id'], $_POS
             $enemy_picks_json,
             $your_bans_json,
             $enemy_bans_json,
-            $winner
+            $winner,
+            $ban_count
         );
         if ($stmt->execute()) {
             $success = "Draft saved successfully!";
@@ -141,6 +144,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['your_team_id'], $_POS
 <head>
   <meta charset="UTF-8">
   <title>MLBB Draft Tool with Bans</title>
+  <link rel="icon" href="logo/logo-v2.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -350,6 +354,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['your_team_id'], $_POS
       </div>
 
       <div class="mb-4">
+        <label for="ban_count" class="form-label">Ban Count Category</label>
+        <select name="ban_count" id="ban_count" class="form-select" required>
+          <option value="6" <?= (isset($_POST['ban_count']) && $_POST['ban_count']==6) ? 'selected' : '' ?>>6 bans (3 per team)</option>
+          <option value="10" <?= (!isset($_POST['ban_count']) || $_POST['ban_count']==10) ? 'selected' : '' ?>>10 bans (5 per team)</option>
+        </select>
+      </div>
+
+      <div class="mb-4">
         <label for="winner" class="form-label">Who Won?</label>
         <select name="winner" id="winner" class="form-select" required>
           <option value="" disabled selected>-- Select Winner --</option>
@@ -406,14 +418,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['your_team_id'], $_POS
 
       <hr>
 
+      <?php
+        $ban_count = isset($_POST['ban_count']) ? intval($_POST['ban_count']) : 10;
+        $bans_per_team = ($ban_count == 6) ? 3 : 5;
+      ?>
       <div class="row mt-4">
         <!-- Your Team Bans -->
         <div class="col-md-6">
           <h5 class="text-success"><?= isset($_POST['your_team_id']) ? htmlspecialchars(get_team_name($teams, $_POST['your_team_id'])) : 'Your Team' ?> - Bans</h5>
           <?php for ($i = 1; $i <= 5; $i++): ?>
-            <div class="mb-3">
+            <div class="mb-3 ban-row" style="<?= ($i > $bans_per_team) ? 'display:none' : '' ?>">
               <label class="form-label">Ban <?= $i ?></label>
-              <select name="your_bans[]" class="form-select select2-hero" required>
+              <select name="your_bans[]" class="form-select select2-hero" <?= ($i <= $bans_per_team) ? 'required' : '' ?>>
                 <option value="">Select Hero</option>
                 <?php foreach ($groupedHeroes as $role => $heroes): ?>
                   <optgroup label="<?= htmlspecialchars($role) ?>">
@@ -431,9 +447,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['your_team_id'], $_POS
         <div class="col-md-6">
           <h5 class="text-danger"><?= isset($_POST['enemy_team_id']) ? htmlspecialchars(get_team_name($teams, $_POST['enemy_team_id'])) : 'Enemy Team' ?> - Bans</h5>
           <?php for ($i = 1; $i <= 5; $i++): ?>
-            <div class="mb-3">
+            <div class="mb-3 ban-row" style="<?= ($i > $bans_per_team) ? 'display:none' : '' ?>">
               <label class="form-label">Ban <?= $i ?></label>
-              <select name="enemy_bans[]" class="form-select select2-hero" required>
+              <select name="enemy_bans[]" class="form-select select2-hero" <?= ($i <= $bans_per_team) ? 'required' : '' ?>>
                 <option value="">Select Hero</option>
                 <?php foreach ($groupedHeroes as $role => $heroes): ?>
                   <optgroup label="<?= htmlspecialchars($role) ?>">
@@ -485,6 +501,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['your_team_id'], $_POS
             $right_picks = $_POST['enemy_team'];
             $right_bans = $_POST['enemy_bans'];
         }
+        $ban_count = isset($_POST['ban_count']) ? intval($_POST['ban_count']) : 10;
       ?>
       <div class="mb-4 mt-5">
         <div class="card shadow-sm border-0" style="background:#232837;">
@@ -502,6 +519,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['your_team_id'], $_POS
                 <?php
                   echo "<span class='text-danger fw-bold'>" . $right_team_name . "</span>";
                 ?>
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                <strong>Draft Category:</strong>
+                <span class="badge bg-info"><?= ($ban_count == 6) ? '6 bans (3 per team)' : '10 bans (5 per team)' ?></span>
               </li>
               <li class="list-group-item bg-transparent text-light">
                 <strong>Winner:</strong>
@@ -816,6 +837,32 @@ $(document).ready(function () {
         mainContent.style.opacity = 1;
       }, 400);
     }
+  });
+
+  // Ban count dynamic fields
+  $(document).ready(function () {
+    function showBanFields() {
+      var banCount = parseInt($('#ban_count').val() || 10, 10);
+      var bansPerTeam = (banCount === 6) ? 3 : 5;
+      // Hide all, then show needed
+      $('.col-md-6 .ban-row').hide();
+      $('.col-md-6').each(function () {
+        $(this).find('.ban-row').each(function (index) {
+          var $select = $(this).find('select');
+          if (index < bansPerTeam) {
+            $(this).show();
+            $select.prop('required', true);
+          } else {
+            $(this).hide();
+            $select.prop('required', false);
+          }
+        });
+      });
+    }
+    $('#ban_count').on('change', function () {
+      showBanFields();
+    });
+    showBanFields();
   });
 </script>
 

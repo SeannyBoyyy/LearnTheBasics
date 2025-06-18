@@ -1,7 +1,7 @@
 <?php
   // Directory where you downloaded/cached the hero API JSON files
   $cache_dir = __DIR__ . '/hero_cache/';
-  $total_heroes = 128;
+  $total_heroes = 129;
   $recent_hero_ids = range($total_heroes, $total_heroes - 4); // [128,127,126,125,124]
 
   // Helper for image fallback (painting, head_big, head, placeholder)

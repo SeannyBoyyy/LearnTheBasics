@@ -1,5 +1,5 @@
 <?php
-// Get hero_id from query string, default to 128 (Lukas) if not set or invalid
+// Get hero_id from query string, default to 129 (Zetian) if not set or invalid
 $hero_id = isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] >= 1 && $_GET['id'] <= 128
     ? intval($_GET['id'])
     : 128;
@@ -103,6 +103,7 @@ if (file_exists($compat_path)) {
 <head>
   <meta charset="UTF-8">
   <title><?= htmlspecialchars($hero['name']) ?> - Hero Statistics</title>
+  <link rel="icon" href="logo/logo-v2.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <style>

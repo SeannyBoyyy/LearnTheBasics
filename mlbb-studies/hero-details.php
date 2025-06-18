@@ -1,8 +1,8 @@
 <?php
-// Get hero_id from query string, default to 128 (Lukas) if not set or invalid
-$hero_id = isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] >= 1 && $_GET['id'] <= 128
+// Get hero_id from query string, default to 129 (Zetian) if not set or invalid
+$hero_id = isset($_GET['id']) && is_numeric($_GET['id']) && $_GET['id'] >= 1 && $_GET['id'] <= 129
     ? intval($_GET['id'])
-    : 128;
+    : 129;
 
 // Load hero list from local cache (downloaded file)
 $hero_list_path = __DIR__ . '/hero_cache/hero-list.json';
@@ -82,6 +82,7 @@ function convertFontColorToSpan($html) {
 <head>
   <meta charset="UTF-8">
   <title><?= htmlspecialchars($hero['name']) ?> - Hero Details</title>
+  <link rel="icon" href="logo/logo-v2.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <style>

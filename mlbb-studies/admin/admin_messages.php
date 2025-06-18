@@ -23,6 +23,7 @@ $mysqli->close();
 <head>
     <meta charset="UTF-8">
     <title>Admin - Contact Messages</title>
+    <link rel="icon" href="logo/logo-v2.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
@@ -147,5 +148,6 @@ $mysqli->close();
             </table>
         </div>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

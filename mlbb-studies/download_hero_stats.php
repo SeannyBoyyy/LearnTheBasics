@@ -2,7 +2,7 @@
 $save_dir = __DIR__ . '/hero_cache/';
 if (!is_dir($save_dir)) mkdir($save_dir);
 
-for ($i = 1; $i <= 128; $i++) {
+for ($i = 1; $i <= 129; $i++) {
     // Hero stats
     $url = "https://mlbb-stats.ridwaanhall.com/api/hero-detail-stats/$i/";
     $json = @file_get_contents($url);

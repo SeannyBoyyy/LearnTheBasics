@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Mobile Legends Draft Analysis</title>
+  <link rel="icon" href="logo/logo-v2.png" type="image/png">
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#317EFB">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  <meta name="mobile-web-app-capable" content="yes">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -10,11 +17,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Swiper JS CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#317EFB">
-  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
-  <meta name="mobile-web-app-capable" content="yes">
 
   <!-- Sweetalert -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
